@@ -28,7 +28,7 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
 
     const previousTopicsLocal = localStorage.getItem("previousTopics");
     if (previousTopicsLocal !== null) {
-      if (previousTopicsLocal.length == 0) {
+      if (JSON.parse(previousTopicsLocal).length == 0) {
         localStorage.setItem("previousTopics", JSON.stringify(previousTopics));
       } else {
         setPreviousTopics(JSON.parse(previousTopicsLocal));
@@ -36,14 +36,14 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
     }
 
     const topicsLocal = localStorage.getItem("topics");
+    const topicsData = getTopics();
     if (topicsLocal !== null) {
-      if (topicsLocal.length == 0) {
-        localStorage.setItem("topics", JSON.stringify(topics));
+      if (JSON.parse(topicsLocal).length == 0) {
+        localStorage.setItem("topics", JSON.stringify(topicsData));
       } else {
         setTopics(JSON.parse(topicsLocal));
       }
     } else {
-      const topicsData = getTopics();
       setTopics(topicsData);
       localStorage.setItem("topics", JSON.stringify(topicsData));
     }

@@ -10,7 +10,7 @@ export default function PlayerModal({
   setPlayers,
   setNotification,
 }: any) {
-  const { t } = useTranslation()
+  const { t }:any = useTranslation()
   const cancelButtonRef = useRef(null);
   const [nickname, setNickname] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(false)

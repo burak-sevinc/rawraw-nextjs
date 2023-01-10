@@ -8,6 +8,7 @@ import StopTimeButton from "./gaming/stoptimebutton";
 import Topic from "./gaming/topic";
 import ResetModal from "./gaming/resetmodal";
 import getTopics from "../lib/gettopics";
+import { Topics } from "../types";
 
 export default function GameArea({
   players,
@@ -50,13 +51,13 @@ export default function GameArea({
     return () => clearInterval(interval);
   }, [gameTime, paused, players]);
 
-  function random(e): any {
+  function random(e:[]) {
     const count = e.length;
     return Math.floor(Math.random() * count);
   }
 
-  function removeTopic(topicId): any {
-    setTopics((topics): any => {
+  function removeTopic(topicId: number) {
+    setTopics((topics:Topics): any => {
       return topics.filter((value, i) => i !== topicId);
     });
     localStorage.setItem("topics", JSON.stringify(topics));

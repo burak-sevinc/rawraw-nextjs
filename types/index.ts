@@ -1,3 +1,5 @@
-export interface IPlayer {
-    state: string
+export type Topic = {
+    name: string
 }
+
+export type Topics = [Topic]

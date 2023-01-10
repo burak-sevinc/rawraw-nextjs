@@ -9,7 +9,7 @@ export default function PreviousTopics({ previousTopics }: any) {
   const {t} = useTranslation()
   const {locale} = useRouter()
   
-  const duration = (second):any => {
+  const duration = (second: number) => {
     const result = moment.duration(second, 'seconds').format(`m [${t('common:min')}] s [${t('common:sec')}]`, {
       usePlural: true,
     });
