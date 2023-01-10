@@ -1,0 +1,1364 @@
+[
+ {
+  "name": "ADANA"
+ },
+ {
+  "name": "ADIYAMAN"
+ },
+ {
+  "name": "AFYONKARAHİSAR"
+ },
+ {
+  "name": "AĞRI"
+ },
+ {
+  "name": "AMASYA"
+ },
+ {
+  "name": "ANKARA"
+ },
+ {
+  "name": "ANTALYA"
+ },
+ {
+  "name": "ARTVİN"
+ },
+ {
+  "name": "AYDIN"
+ },
+ {
+  "name": "BALIKESİR"
+ },
+ {
+  "name": "BİLECİK"
+ },
+ {
+  "name": "BİNGÖL"
+ },
+ {
+  "name": "BİTLİS"
+ },
+ {
+  "name": "BOLU"
+ },
+ {
+  "name": "BURDUR"
+ },
+ {
+  "name": "BURSA"
+ },
+ {
+  "name": "ÇANAKKALE"
+ },
+ {
+  "name": "ÇANKIRI"
+ },
+ {
+  "name": "ÇORUM"
+ },
+ {
+  "name": "DENİZLİ"
+ },
+ {
+  "name": "DİYARBAKIR"
+ },
+ {
+  "name": "EDİRNE"
+ },
+ {
+  "name": "ELAZIĞ"
+ },
+ {
+  "name": "ERZİNCAN"
+ },
+ {
+  "name": "ERZURUM"
+ },
+ {
+  "name": "ESKİŞEHİR"
+ },
+ {
+  "name": "GAZİANTEP"
+ },
+ {
+  "name": "GİRESUN"
+ },
+ {
+  "name": "GÜMÜŞHANE"
+ },
+ {
+  "name": "HAKKARİ"
+ },
+ {
+  "name": "HATAY"
+ },
+ {
+  "name": "ISPARTA"
+ },
+ {
+  "name": "MERSİN"
+ },
+ {
+  "name": "İSTANBUL"
+ },
+ {
+  "name": "İZMİR"
+ },
+ {
+  "name": "KARS"
+ },
+ {
+  "name": "KASTAMONU"
+ },
+ {
+  "name": "KAYSERİ"
+ },
+ {
+  "name": "KIRKLARELİ"
+ },
+ {
+  "name": "KIRŞEHİR"
+ },
+ {
+  "name": "İZMİT"
+ },
+ {
+  "name": "KONYA"
+ },
+ {
+  "name": "KÜTAHYA"
+ },
+ {
+  "name": "MALATYA"
+ },
+ {
+  "name": "MANİSA"
+ },
+ {
+  "name": "KAHRAMANMARAŞ"
+ },
+ {
+  "name": "MARDİN"
+ },
+ {
+  "name": "MUĞLA"
+ },
+ {
+  "name": "MUŞ"
+ },
+ {
+  "name": "NEVŞEHİR"
+ },
+ {
+  "name": "NİĞDE"
+ },
+ {
+  "name": "ORDU"
+ },
+ {
+  "name": "RİZE"
+ },
+ {
+  "name": "ADAPAZARI"
+ },
+ {
+  "name": "SAMSUN"
+ },
+ {
+  "name": "SİİRT"
+ },
+ {
+  "name": "SİNOP"
+ },
+ {
+  "name": "SİVAS"
+ },
+ {
+  "name": "TEKİRDAĞ"
+ },
+ {
+  "name": "TOKAT"
+ },
+ {
+  "name": "TRABZON"
+ },
+ {
+  "name": "TUNCELİ"
+ },
+ {
+  "name": "ŞANLIURFA"
+ },
+ {
+  "name": "UŞAK"
+ },
+ {
+  "name": "VAN"
+ },
+ {
+  "name": "YOZGAT"
+ },
+ {
+  "name": "ZONGULDAK"
+ },
+ {
+  "name": "AKSARAY"
+ },
+ {
+  "name": "BAYBURT"
+ },
+ {
+  "name": "KARAMAN"
+ },
+ {
+  "name": "KIRIKKALE"
+ },
+ {
+  "name": "BATMAN"
+ },
+ {
+  "name": "ŞIRNAK"
+ },
+ {
+  "name": "BARTIN"
+ },
+ {
+  "name": "ARDAHAN"
+ },
+ {
+  "name": "IĞDIR"
+ },
+ {
+  "name": "YALOVA"
+ },
+ {
+  "name": "KARABÜK"
+ },
+ {
+  "name": "KİLİS"
+ },
+ {
+  "name": "OSMANİYE"
+ },
+ {
+  "name": "DÜZCE"
+ },
+ {
+  "name": "Halk Edebiyatı"
+ },
+ {
+  "name": "Divan Edebiyatı"
+ },
+ {
+  "name": "Tanzimat Edebiyatı"
+ },
+ {
+  "name": "Servet-i Fünun Edebiyatı"
+ },
+ {
+  "name": "Fecr-i Ati Edebiyatı"
+ },
+ {
+  "name": "Milli Edebiyat"
+ },
+ {
+  "name": "Cumhuriyet Dönemi Edebiyatı"
+ },
+ {
+  "name": "Dünya Edebiyatı"
+ },
+ {
+  "name": "Türkiye’de Ekonomi"
+ },
+ {
+  "name": "Ekstrem Doğa Olayları"
+ },
+ {
+  "name": "Küresel İklim Değişimi"
+ },
+ {
+  "name": "Nüfus Politikaları"
+ },
+ {
+  "name": "Aslan Kral (çizgi film)"
+ },
+ {
+  "name": "Wall-e"
+ },
+ {
+  "name": "Up (film)"
+ },
+ {
+  "name": " Esaretin Bedeli (1994)(film)"
+ },
+ {
+  "name": " Baba (1972)(film)"
+ },
+ {
+  "name": " Baba 2 (1974)(film)"
+ },
+ {
+  "name": " Kara Şövalye (2008)(film)"
+ },
+ {
+  "name": " 12 Öfkeli Adam (1957)(film)"
+ },
+ {
+  "name": " Schindler'in Listesi (1993)(film)"
+ },
+ {
+  "name": " Yüzüklerin Efendisi: Kralın Dönüşü (2003)(film)"
+ },
+ {
+  "name": " Ucuz Roman (1994)(film)"
+ },
+ {
+  "name": " İyi, Kötü ve Çirkin (1966)(film)"
+ },
+ {
+  "name": " Yüzüklerin Efendisi: Yüzük Kardeşliği (2001)(film)"
+ },
+ {
+  "name": " Dövüş Kulübü (1999)(film)"
+ },
+ {
+  "name": " Forrest Gump (1994)(film)"
+ },
+ {
+  "name": " Başlangıç (2010)(film)"
+ },
+ {
+  "name": " Yüzüklerin Efendisi: İki Kule (2002)(film)"
+ },
+ {
+  "name": " Yıldız Savaşları: İmparator (1980)(film)"
+ },
+ {
+  "name": " Matrix (1999)(film)"
+ },
+ {
+  "name": " Sıkı Dostlar (1990)(film)"
+ },
+ {
+  "name": " Guguk Kuşu (1975)(film)"
+ },
+ {
+  "name": " Yedi Samuray-Kanlı Pirinç (1954)(film)"
+ },
+ {
+  "name": " Yedi (1995)(film)"
+ },
+ {
+  "name": " Tanrı Kent (2002)(film)"
+ },
+ {
+  "name": " Kuzuların Sessizliği (1991)(film)"
+ },
+ {
+  "name": " Hayat Güzeldir (1997)(film)"
+ },
+ {
+  "name": " Şahane Hayat (1946)(film)"
+ },
+ {
+  "name": " Yıldız Savaşları: Bölüm IV - Yeni Bir Umut (1977)(film)"
+ },
+ {
+  "name": " Er Ryan'ı Kurtarmak (1998)(film)"
+ },
+ {
+  "name": " Ruhların Kaçışı (2001)(film)"
+ },
+ {
+  "name": " Yıldızlararası (2014)(film)"
+ },
+ {
+  "name": " Yeşil Yol (1999)(film)"
+ },
+ {
+  "name": " Parazit (2019)(film)"
+ },
+ {
+  "name": " Sevginin Gücü (1994)(film)"
+ },
+ {
+  "name": " Seppuku (1962)(film)"
+ },
+ {
+  "name": " Olağan Şüpheliler (1995)(film)"
+ },
+ {
+  "name": " Piyanist (2002)(film)"
+ },
+ {
+  "name": " Geleceğe Dönüş (1985)(film)"
+ },
+ {
+  "name": " Terminator 2: Mahşer Günü (1991)(film)"
+ },
+ {
+  "name": " Asri Zamanlar (1936)(film)"
+ },
+ {
+  "name": " Sapık (1960)(film)"
+ },
+ {
+  "name": " Aslan Kral (1994)(film)"
+ },
+ {
+  "name": " Geçmişin Gölgesinde (1998)(film)"
+ },
+ {
+  "name": " Şehir Işıkları (1931)(film)"
+ },
+ {
+  "name": " Ateşböceklerinin Mezarı (1988)(film)"
+ },
+ {
+  "name": " Gladyatör (2000)(film)"
+ },
+ {
+  "name": " Whiplash (2014)(film)"
+ },
+ {
+  "name": " Köstebek (2006)(film)"
+ },
+ {
+  "name": " Can Dostum (2011)(film)"
+ },
+ {
+  "name": " Prestij (2006)(film)"
+ },
+ {
+  "name": " Casablanca (1942)(film)"
+ },
+ {
+  "name": " Batıda Kan Var (1968)(film)"
+ },
+ {
+  "name": " Arka Pencere (1954)(film)"
+ },
+ {
+  "name": " Cennet Sineması (1988)(film)"
+ },
+ {
+  "name": " Yaratık (1979)(film)"
+ },
+ {
+  "name": " Kıyamet (1979)(film)"
+ },
+ {
+  "name": " Akıl Defteri (2000)(film)"
+ },
+ {
+  "name": " Kutsal Hazine Avcıları (1981)(film)"
+ },
+ {
+  "name": " Şarlo Diktatör (1940)(film)"
+ },
+ {
+  "name": " Başkalarının Hayatı (2006)(film)"
+ },
+ {
+  "name": " Zincirsiz (2012)(film)"
+ },
+ {
+  "name": " Zafer Yolları (1957)(film)"
+ },
+ {
+  "name": " Sunset Bulvarı (1950)(film)"
+ },
+ {
+  "name": " VOL·i (2008)(film)"
+ },
+ {
+  "name": " Cinnet (1980)(film)"
+ },
+ {
+  "name": " Avengers: Sonsuzluk Savaşı (2018)(film)"
+ },
+ {
+  "name": " Beklenmeyen Şahit (1957)(film)"
+ },
+ {
+  "name": " Garip Doktor (1964)(film)"
+ },
+ {
+  "name": " Joker (2019)(film)"
+ },
+ {
+  "name": " Örümcek-Adam: Örümcek Evreninde (2018)(film)"
+ },
+ {
+  "name": " İhtiyar Delikanlı (2003)(film)"
+ },
+ {
+  "name": " Prenses Mononoke (1997)(film)"
+ },
+ {
+  "name": " Hamilton (2020)(film)"
+ },
+ {
+  "name": " Senin Adın (2016)(film)"
+ },
+ {
+  "name": " Bir Zamanlar Amerika (1984)(film)"
+ },
+ {
+  "name": " Kara Şövalye Yükseliyor (2012)(film)"
+ },
+ {
+  "name": " Yaratığın Dönüşü (1986)(film)"
+ },
+ {
+  "name": " Coco (2017)(film)"
+ },
+ {
+  "name": " Mukaddes Vazife (1981)(film)"
+ },
+ {
+  "name": " Kefernahum (2018)(film)"
+ },
+ {
+  "name": " Avengers: Endgame (2019)(film)"
+ },
+ {
+  "name": " Yüksek ve Alçak (1963)(film)"
+ },
+ {
+  "name": " Amerikan Güzeli (1999)(film)"
+ },
+ {
+  "name": " Oyuncak Hikayesi (1995)(film)"
+ },
+ {
+  "name": " 3 Ahmak (2009)(film)"
+ },
+ {
+  "name": " Cesur Yürek (1995)(film)"
+ },
+ {
+  "name": " Amadeus (1984)(film)"
+ },
+ {
+  "name": " Pather Panchali (1955)(film)"
+ },
+ {
+  "name": " Soysuzlar Çetesi (2009)(film)"
+ },
+ {
+  "name": " Can Dostum (1997)(film)"
+ },
+ {
+  "name": " Yıldız Savaşları: Jedi'ın Dönüşü (1983)(film)"
+ },
+ {
+  "name": " 2001: Uzay Yolu Macerası (1968)(film)"
+ },
+ {
+  "name": " Rezervuar Köpekleri (1992)(film)"
+ },
+ {
+  "name": " Her Çocuk Özeldir (2007)(film)"
+ },
+ {
+  "name": " Bir Şehir Katilini Arıyor (1931)(film)"
+ },
+ {
+  "name": " Ölüm Korkusu (1958)(film)"
+ },
+ {
+  "name": " Yurttaş Kane (1941)(film)"
+ },
+ {
+  "name": " Onur Savaşı (2012)(film)"
+ },
+ {
+  "name": " Bir Rüya İçin Ağıt (2000)(film)"
+ },
+ {
+  "name": " Gel ve gör (1985)(film)"
+ },
+ {
+  "name": " Yağmur Altında (1952)(film)"
+ },
+ {
+  "name": " Gizli Teşkilât (1959)(film)"
+ },
+ {
+  "name": " Sil Baştan (2004)(film)"
+ },
+ {
+  "name": " Bisiklet Hırsızları (1948)(film)"
+ },
+ {
+  "name": " Yaşamak (1952)(film)"
+ },
+ {
+  "name": " Arabistanlı Lawrence (1962)(film)"
+ },
+ {
+  "name": " Yumurcak (1921)(film)"
+ },
+ {
+  "name": " Dangal (2016)(film)"
+ },
+ {
+  "name": " Full Metal Jacket (1987)(film)"
+ },
+ {
+  "name": " Baba (2020)(film)"
+ },
+ {
+  "name": " Otomatik Portakal (1971)(film)"
+ },
+ {
+  "name": " Metropolis (1927)(film)"
+ },
+ {
+  "name": " Taksi Şoförü (1976)(film)"
+ },
+ {
+  "name": " Garsoniyer (1960)(film)"
+ },
+ {
+  "name": "AC\/DC"
+ },
+ {
+  "name": "Adele"
+ },
+ {
+  "name": "Ariana Grande"
+ },
+ {
+  "name": "The Beatles"
+ },
+ {
+  "name": "Beyoncé"
+ },
+ {
+  "name": "Billie Eilish"
+ },
+ {
+  "name": "Bob Marley"
+ },
+ {
+  "name": "Coldplay"
+ },
+ {
+  "name": "David Bowie"
+ },
+ {
+  "name": "The Eagles"
+ },
+ {
+  "name": "Ed Sheeran"
+ },
+ {
+  "name": "Elvis Presley"
+ },
+ {
+  "name": "The Rolling Stones"
+ },
+ {
+  "name": "Green Day"
+ },
+ {
+  "name": "Guns N' Roses"
+ },
+ {
+  "name": "Imagine Dragons"
+ },
+ {
+  "name": "Justin Bieber"
+ },
+ {
+  "name": "Lady Gaga"
+ },
+ {
+  "name": "Madonna"
+ },
+ {
+  "name": "Maroon 5"
+ },
+ {
+  "name": "Metallica"
+ },
+ {
+  "name": "Michael Jackson"
+ },
+ {
+  "name": "The Police"
+ },
+ {
+  "name": "Queen"
+ },
+ {
+  "name": "Radiohead"
+ },
+ {
+  "name": "Red Hot Chili Peppers"
+ },
+ {
+  "name": "Rihanna"
+ },
+ {
+  "name": "Taylor Swift"
+ },
+ {
+  "name": "U2"
+ },
+ {
+  "name": "Kanye West"
+ },
+ {
+  "name": "ABBA"
+ },
+ {
+  "name": "The Beach Boys"
+ },
+ {
+  "name": "Britney Spears"
+ },
+ {
+  "name": "Bruno Mars"
+ },
+ {
+  "name": "Calvin Harris"
+ },
+ {
+  "name": "The Carpenters"
+ },
+ {
+  "name": "Celine Dion"
+ },
+ {
+  "name": "Cher"
+ },
+ {
+  "name": "Elton John"
+ },
+ {
+  "name": "Fleetwood Mac"
+ },
+ {
+  "name": "Madonna"
+ },
+ {
+  "name": "Mariah Carey"
+ },
+ {
+  "name": "The Monkees"
+ },
+ {
+  "name": "Neil Diamond"
+ },
+ {
+  "name": "Phil Collins"
+ },
+ {
+  "name": "Pink Floyd"
+ },
+ {
+  "name": "Prince"
+ },
+ {
+  "name": "The Supremes"
+ },
+ {
+  "name": "Whitney Houston"
+ },
+ {
+  "name": "The Who"
+ },
+ {
+  "name": "Zara Larsson"
+ },
+ {
+  "name": "Adam Levine"
+ },
+ {
+  "name": "Alicia Keys"
+ },
+ {
+  "name": "Ariana Grande"
+ },
+ {
+  "name": "Blackpink"
+ },
+ {
+  "name": "Bob Dylan"
+ },
+ {
+  "name": "Bon Jovi"
+ },
+ {
+  "name": "Bruno Mars"
+ },
+ {
+  "name": "The Chainsmokers"
+ },
+ {
+  "name": "Chris Brown"
+ },
+ {
+  "name": "Christina Aguilera"
+ },
+ {
+  "name": "Dua Lipa"
+ },
+ {
+  "name": "Ed Sheeran"
+ },
+ {
+  "name": "Elton John"
+ },
+ {
+  "name": "Eminem"
+ },
+ {
+  "name": "Enya"
+ },
+ {
+  "name": "The Grateful Dead"
+ },
+ {
+  "name": "Harry Styles"
+ },
+ {
+  "name": "Imagine Dragons"
+ },
+ {
+  "name": "Justin Timberlake"
+ },
+ {
+  "name": "Kanye West"
+ },
+ {
+  "name": "Katy Perry"
+ },
+ {
+  "name": "Kendrick Lamar"
+ },
+ {
+  "name": "Lady Antebellum"
+ },
+ {
+  "name": "Lana Del Rey"
+ },
+ {
+  "name": "Led Zeppelin"
+ },
+ {
+  "name": "Lil Wayne"
+ },
+ {
+  "name": "Linkin Park"
+ },
+ {
+  "name": "Maroon 5"
+ },
+ {
+  "name": "Miley Cyrus"
+ },
+ {
+  "name": "One Direction"
+ },
+ {
+  "name": "Ozzy Osbourne"
+ },
+ {
+  "name": "Paul McCartney"
+ },
+ {
+  "name": "Post Malone"
+ },
+ {
+  "name": "Queen"
+ },
+ {
+  "name": "R.E.M."
+ },
+ {
+  "name": "Rascal Flatts"
+ },
+ {
+  "name": "Rihanna"
+ },
+ {
+  "name": "Rod Stewart"
+ },
+ {
+  "name": "Sam Smith"
+ },
+ {
+  "name": "Selena Gomez"
+ },
+ {
+  "name": "The Spice Girls"
+ },
+ {
+  "name": "Taylor Swift"
+ },
+ {
+  "name": "Tom Petty"
+ },
+ {
+  "name": "U2"
+ },
+ {
+  "name": "Usher"
+ },
+ {
+  "name": "The Weeknd"
+ },
+ {
+  "name": "The White Stripes"
+ },
+ {
+  "name": "The xx"
+ },
+ {
+  "name": "Young Thug"
+ },
+ {
+  "name": "Tarkan (müzisyen)"
+ },
+ {
+  "name": "Sezen Aksu (müzisyen)"
+ },
+ {
+  "name": "Aydın Kurtoğlu (müzisyen)"
+ },
+ {
+  "name": "Mustafa Sandal (müzisyen)"
+ },
+ {
+  "name": "Sıla (müzisyen)"
+ },
+ {
+  "name": "Ebru Gündeş (müzisyen)"
+ },
+ {
+  "name": "Gülşen (müzisyen)"
+ },
+ {
+  "name": "Özcan Deniz (müzisyen)"
+ },
+ {
+  "name": "Hande Yener (müzisyen)"
+ },
+ {
+  "name": "Murat Boz (müzisyen)"
+ },
+ {
+  "name": "Bülent Ortaçgil (müzisyen)"
+ },
+ {
+  "name": "Ferhat Göçer (müzisyen)"
+ },
+ {
+  "name": "İrem Derici (müzisyen)"
+ },
+ {
+  "name": "Ömer Faruk Bostan (müzisyen)"
+ },
+ {
+  "name": "Nilüfer (müzisyen)"
+ },
+ {
+  "name": "Emre Aydın (müzisyen)"
+ },
+ {
+  "name": "Duman (müzisyen)"
+ },
+ {
+  "name": "Kenan Doğulu (müzisyen)"
+ },
+ {
+  "name": "Buray (müzisyen)"
+ },
+ {
+  "name": "Aşkın Nur Yengi (müzisyen)"
+ },
+ {
+  "name": "Emrah (müzisyen)"
+ },
+ {
+  "name": "Muazzez Abacı (müzisyen)"
+ },
+ {
+  "name": "İzel (müzisyen)"
+ },
+ {
+  "name": "Teoman (müzisyen)"
+ },
+ {
+  "name": "İbrahim Tatlıses (müzisyen)"
+ },
+ {
+  "name": "Aşkın Nur Yengi (müzisyen)"
+ },
+ {
+  "name": "İskender Paydaş (müzisyen)"
+ },
+ {
+  "name": "Melike Demirağ (müzisyen)"
+ },
+ {
+  "name": "Ajda Pekkan (müzisyen)"
+ },
+ {
+  "name": "Frozen (film & çizgi film)"
+ },
+ {
+  "name": "Toy Story 3 (film & çizgi film)"
+ },
+ {
+  "name": "The Lion King (film & çizgi film)"
+ },
+ {
+  "name": "Finding Nemo (film & çizgi film)"
+ },
+ {
+  "name": "Shrek 2 (film & çizgi film)"
+ },
+ {
+  "name": "Incredibles 2 (film & çizgi film)"
+ },
+ {
+  "name": "Beauty and the Beast (film & çizgi film)"
+ },
+ {
+  "name": "Aladdin (film & çizgi film)"
+ },
+ {
+  "name": "The Secret Life of Pets (film & çizgi film)"
+ },
+ {
+  "name": "Despicable Me 3 (film & çizgi film)"
+ },
+ {
+  "name": "The Little Mermaid (film & çizgi film)"
+ },
+ {
+  "name": "Spider-Man: Into the Spider-Verse (film & çizgi film)"
+ },
+ {
+  "name": "Frozen 2 (film & çizgi film)"
+ },
+ {
+  "name": "The Grinch (film & çizgi film)"
+ },
+ {
+  "name": "The Jungle Book (film & çizgi film)"
+ },
+ {
+  "name": "The Incredibles (film & çizgi film)"
+ },
+ {
+  "name": "Zootopia (film & çizgi film)"
+ },
+ {
+  "name": "The Lego Movie (film & çizgi film)"
+ },
+ {
+  "name": "Tangled (film & çizgi film)"
+ },
+ {
+  "name": "Moana (film & çizgi film)"
+ },
+ {
+  "name": "Minions (film & çizgi film)"
+ },
+ {
+  "name": "How to Train Your Dragon (film & çizgi film)"
+ },
+ {
+  "name": "Cars 3 (film & çizgi film)"
+ },
+ {
+  "name": "Coco (film & çizgi film)"
+ },
+ {
+  "name": "Big Hero 6 (film & çizgi film)"
+ },
+ {
+  "name": "Brave (film & çizgi film)"
+ },
+ {
+  "name": "Wreck-It Ralph (film & çizgi film)"
+ },
+ {
+  "name": "Shrek (film & çizgi film)"
+ },
+ {
+  "name": "The Lego Batman Movie (film & çizgi film)"
+ },
+ {
+  "name": "Monsters, Inc. (film & çizgi film)"
+ },
+ {
+  "name": "En uzun seyahatim"
+ },
+ {
+  "name": "Gitar"
+ },
+ {
+  "name": "Keman"
+ },
+ {
+  "name": "Piyano"
+ },
+ {
+  "name": "Davul"
+ },
+ {
+  "name": "Ramazan Bayramı"
+ },
+ {
+  "name": "Kurban Bayramı"
+ },
+ {
+  "name": "Cumhuriyet Bayramı"
+ },
+ {
+  "name": "Ulusal Egemenlik ve Çocuk Bayramı"
+ },
+ {
+  "name": "Yılbaşı"
+ },
+ {
+  "name": "Noel bayramı"
+ },
+ {
+  "name": "Gelecek planlarım"
+ },
+ {
+  "name": "En komik okul anısı"
+ },
+ {
+  "name": "En zor geçen günüm"
+ },
+ {
+  "name": "İlkokula dair bir anı"
+ },
+ {
+  "name": "Liseye dair bir anı"
+ },
+ {
+  "name": "Üniversiteye dair bir anı"
+ },
+ {
+  "name": "Mahalle kültürüne dair bir anı"
+ },
+ {
+  "name": "Bakkal"
+ },
+ {
+  "name": "Market"
+ },
+ {
+  "name": "Metro istasyonu"
+ },
+ {
+  "name": "Otobüs"
+ },
+ {
+  "name": "Şehirler arası otobüs"
+ },
+ {
+  "name": "Tren"
+ },
+ {
+  "name": "Taksi"
+ },
+ {
+  "name": "Otobüs kartı"
+ },
+ {
+  "name": "Kredi Kartı"
+ },
+ {
+  "name": "Banka kartı"
+ },
+ {
+  "name": "Borçlarım"
+ },
+ {
+  "name": "Aileye dair bir anı"
+ },
+ {
+  "name": "Bisiklet"
+ },
+ {
+  "name": "Motosiklet"
+ },
+ {
+  "name": "Araba"
+ },
+ {
+  "name": "Asansör"
+ },
+ {
+  "name": "Eşek şakası"
+ },
+ {
+  "name": "1 Nisan şakası"
+ },
+ {
+  "name": "Okul gezisi"
+ },
+ {
+  "name": "Yaz tatili planlarım"
+ },
+ {
+  "name": "Sömestr planlarım"
+ },
+ {
+  "name": "Kariyer hedeflerim"
+ },
+ {
+  "name": "Zengin olunca alacağım ilk araba"
+ },
+ {
+  "name": "Zengin olunca alacağım ilk ev"
+ },
+ {
+  "name": "Seyahat etmek istediğim ülke"
+ },
+ {
+  "name": "Çin"
+ },
+ {
+  "name": "Japonya"
+ },
+ {
+  "name": "Rusya"
+ },
+ {
+  "name": "Amerika"
+ },
+ {
+  "name": "Lüksemburg"
+ },
+ {
+  "name": "Almanya"
+ },
+ {
+  "name": "Belçika"
+ },
+ {
+  "name": "İsviçre"
+ },
+ {
+  "name": "İsveç"
+ },
+ {
+  "name": "İkea"
+ },
+ {
+  "name": "Nike"
+ },
+ {
+  "name": "Adidas"
+ },
+ {
+  "name": "Starbucks"
+ },
+ {
+  "name": "Romanya"
+ },
+ {
+  "name": "Yunanistan"
+ },
+ {
+  "name": "İtalya"
+ },
+ {
+  "name": "Kahveler"
+ },
+ {
+  "name": "Espresso"
+ },
+ {
+  "name": "Americano"
+ },
+ {
+  "name": "İsrail"
+ },
+ {
+  "name": "Suriye"
+ },
+ {
+  "name": "Bulgaristan"
+ },
+ {
+  "name": "Rakı"
+ },
+ {
+  "name": "Bira"
+ },
+ {
+  "name": "Vodka"
+ },
+ {
+  "name": "Cin tonik"
+ },
+ {
+  "name": "Şampanya"
+ },
+ {
+  "name": "Şarap"
+ },
+ {
+  "name": "En gergin okul anım"
+ },
+ {
+  "name": "Rezil olduğum anım"
+ },
+ {
+  "name": "Gördüğüm en garip yer"
+ },
+ {
+  "name": "Gördüğüm en garip şehir"
+ },
+ {
+  "name": "Gördüğüm en garip insan"
+ },
+ {
+  "name": "Kült filmler"
+ },
+ {
+  "name": "Kült müzisyen veya müzik grupları"
+ },
+ {
+  "name": "Az bilinen müzisyenler"
+ },
+ {
+  "name": "Favori müzisyenim"
+ },
+ {
+  "name": "Favori rengim"
+ },
+ {
+  "name": "Favori arabam"
+ },
+ {
+  "name": "En beğendiğim çiçek"
+ },
+ {
+  "name": "Sigara"
+ },
+ {
+  "name": "Ehliyet"
+ },
+ {
+  "name": "Reşit olduğumda yapacağım dediğim şeyler"
+ },
+ {
+  "name": "Çocukluk hayallerim"
+ },
+ {
+  "name": "En az 1 kez yapmak istediğim şey"
+ }
+]

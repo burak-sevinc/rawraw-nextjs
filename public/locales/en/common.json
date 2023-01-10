@@ -1,0 +1,21 @@
+
+{
+    "players": "Players",
+    "time": "Passing Time",
+    "gameTurn": "Turn",
+    "start": "Start",
+    "continue": "Continue",
+    "pause": "Pause",
+    "nextTopic": "Next Topic",
+    "topic": "Topic",
+    "previousTopics": "Previous Topics",
+    "close": "Close",
+    "create": "Create",
+    "nickname": "Player name",
+    "second": "seconds",
+    "sec": "sec",
+    "min": "min",
+    "resetTitle": "Do you want to reset the game?",
+    "resetDescription": "All players and previous topics will be reset when you reset the game.",
+    "resetButton": "Reset"
+  }

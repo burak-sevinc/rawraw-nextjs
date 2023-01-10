@@ -1,0 +1,8 @@
+
+{
+  "playerAdded": "Player added.",
+  "playerRemoved": "The player has been removed.",
+  "topicsFinished": "You talked about all the topics 👻",
+  "minPlayer": "Minimum of 2 players required to play.",
+  "resetSuccess": "The game has been reset successfully."
+}

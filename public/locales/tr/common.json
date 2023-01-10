@@ -1,0 +1,21 @@
+
+{
+    "players": "Oyuncular",
+    "time": "Geçen Süre",
+    "gameTurn": "Oyun Sırası",
+    "start": "Başlat",
+    "continue": "Devam et",
+    "pause": "Duraklat",
+    "nextTopic": "Sıradaki Konu",
+    "topic": "Konu",
+    "previousTopics": "Geçmiş konular",
+    "close": "Kapat",
+    "create": "Oluştur",
+    "nickname": "Oyuncu adı",
+    "second": "saniye",
+    "sec": "sn",
+    "min": "dk",
+    "resetTitle": "Oyunu sıfırlamak üzeresiniz...",
+    "resetDescription": "Oyunu sıfırladığınızda tüm oyuncular ve geçmiş konular sıfırlanacaktır.",
+    "resetButton": "Sıfırla"
+  }
