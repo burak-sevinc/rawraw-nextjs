@@ -6,6 +6,7 @@ import GameArea from "../components/gamearea";
 import PreviousTopics from "../components/gaming/previoustopics";
 import Players from "../components/players";
 import getTopics from "../lib/gettopics";
+import Head from "next/head";
 
 function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
   const [topics, setTopics]: any = useState([]);
@@ -51,6 +52,10 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
 
   return (
     <>
+    <Head>
+    <title>Rawraw Game</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    </Head>
       <div className="lg:grid-rows-2 rounded-xl shadow-2xl dark:shadow-dark-green border border-slate-200 dark:border-lemon-green bg-gray-100 dark:bg-dark grid lg:grid-cols-4 grid-cols-1 mt-8 md:mx-12 mx-4 lg:mx-44 xl:mx-64 lg:space-x-4 lg:space-y-0 space-y-4 p-4">
         <div className="lg:col-span-1 lg:row-span-2 col-span-1 space-y-4">
           <Players players={players} setPlayers={setPlayers} />
