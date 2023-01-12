@@ -22,6 +22,7 @@ export default function GameArea({
 }: any) {
   const [currentPlayer, setCurrentPlayer] = useState("");
   const [gameTime, setGameTime] = useState(0);
+  const [nextTopicButtonDisabled, setNextTopicButtonDisabled] = useState(false)
   const [paused, setPaused] = useState(true);
   const [resetModal, setResetModal] = useState(false);
   const [resetButtonDisabled, setResetButtonDisabled] = useState(true);
@@ -51,6 +52,19 @@ export default function GameArea({
     return () => clearInterval(interval);
   }, [gameTime, paused, players]);
 
+  useEffect(() => {
+    if(gameTime < 3){
+      if(paused){
+        setNextTopicButtonDisabled(false)
+      }else{
+        setNextTopicButtonDisabled(true)
+      }
+    }else{
+      setNextTopicButtonDisabled(false)
+    }
+  }, [gameTime, nextTopicButtonDisabled, paused])
+  
+
   function random(e:[]) {
     const count = e.length;
     return Math.floor(Math.random() * count);
@@ -62,8 +76,17 @@ export default function GameArea({
     });
     localStorage.setItem("topics", JSON.stringify(topics));
   }
+  
 
   const handleNextTopic = () => {
+    if(nextTopicButtonDisabled){
+      setNotification({
+        visible: true,
+        status: "error",
+        message: t("messages:minNextTopicTime"),
+      });
+      return;
+    }
     if (players.length > 1) {
       setCurrentPlayer(players[random(players)]); //Set current player
       if (currentTopic !== "") {
@@ -81,6 +104,7 @@ export default function GameArea({
           JSON.stringify(previousTopicsLocal)
         );
       }
+
       if (topics.length != 0) {
         const topicId = random(topics); //Random topic id
         setCurrentTopic(topics[topicId].name); //Set current topic
@@ -108,7 +132,6 @@ export default function GameArea({
 
   const handleStopTime = () => {
     if (players.length > 1) {
-      setCurrentPlayer(players[0]);
       setPaused(!paused);
       if (currentTopic == "") {
         handleNextTopic();

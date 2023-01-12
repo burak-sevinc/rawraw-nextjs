@@ -2,6 +2,7 @@ import { useState } from "react";
 import Notification from "./gaming/notification";
 import PlayerModal from "./playermodal";
 import { useTranslation } from 'next-i18next'
+import Image from "next/image";
 
 export default function Players({ players, setPlayers }: any) {
   const { t } = useTranslation();
@@ -18,6 +19,8 @@ export default function Players({ players, setPlayers }: any) {
     })
     localStorage.setItem('players', JSON.stringify(newPlayers))
   };
+
+  const avatarUrl = (name: string) => `https://ui-avatars.com/api/?name=${name}&length=2&bold=true&rounded=true&format=svg&background=FFE77AFF&color=1E5128`
   
   return (
     <div className="relative">
@@ -60,20 +63,7 @@ export default function Players({ players, setPlayers }: any) {
             >
               <div className="flex dark:text-lemon-green items-center space-x-2">
                 <span>
-                  <svg
-                    className="w-6 h-6 text-slate-500 dark:text-lemon-green"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1"
-                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
+                  <Image src={avatarUrl(item)} width={30} height={30} alt={item} className="rounded-full" />
                 </span>
                 <h3 className="ml-1 font-semibold">{item}</h3>
               </div>

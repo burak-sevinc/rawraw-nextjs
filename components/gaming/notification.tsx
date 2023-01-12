@@ -3,16 +3,19 @@ import { Fragment, useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 
 export default function Notification({ notification, setNotification }: any) {
+
   useEffect(() => {
     const timer = setTimeout(
       () =>
         setNotification({
           visible: false,
+          status: "",
+          message: ""
         }),
       2000
     );
     return () => clearTimeout(timer);
-  });
+  },[notification, setNotification]);
   const checkCircleIcon = () => {
     return (
       <svg

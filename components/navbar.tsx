@@ -15,11 +15,10 @@ export default function Navbar() {
       return (
         <div className="p-1 rounded-full flex space-x-8">
           <span className="sr-only">Dark mode toggle</span>
-          <Image alt="cigar" src="/cigar.svg" height={50} width={50} />
           <Image
             onClick={() => setTheme("light")}
             alt="light_mode"
-            src="/ashtry_yellow.svg"
+            src="/ashtry_cigar.svg"
             height={50}
             width={50}
             className="transition delay-50 duration-100 hover:scale-110"

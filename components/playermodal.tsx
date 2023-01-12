@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useRef, useState } from "react";
-import { useTranslation } from 'next-i18next'
+import React, { Fragment, useEffect, useRef, useState } from "react";
+import { useTranslation } from "next-i18next";
 import { Dialog, Transition } from "@headlessui/react";
 
 export default function PlayerModal({
@@ -10,36 +10,55 @@ export default function PlayerModal({
   setPlayers,
   setNotification,
 }: any) {
-  const { t }:any = useTranslation()
-  const cancelButtonRef = useRef(null);
+  const { t }: any = useTranslation();
+  const nicknameRef = useRef<HTMLInputElement>(null);
   const [nickname, setNickname] = useState("");
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false)
-  const handleAddPlayer = async () => {
-    await setPlayers([nickname, ...players]);
-    const playersLocal = localStorage.getItem('players')
-    if(playersLocal !== null){
-      const playersParse = JSON.parse(playersLocal)
-        playersParse.unshift(nickname)
-        localStorage.setItem('players', JSON.stringify(playersParse))
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [minError, setMinError] = useState(false);
 
+  useEffect(() => {
+    !open ? setMinError(false) : ""
+  }, [open]);
+
+  const handleMinLength = (e: any) => {
+    if (nicknameRef.current?.value == "") {
+      setMinError(true);
+      return nicknameRef.current.focus();
+    } else {
+      setNickname(e.target.value);
+      setMinError(false);
+    }
+  };
+
+  const handleAddPlayer = async () => {
+    if (nicknameRef.current?.value == "") {
+      setMinError(true);
+      return nicknameRef.current.focus();
+    } else {
+      setMinError(false);
+    }
+    await setPlayers([nickname, ...players]);
+    const playersLocal = localStorage.getItem("players");
+    if (playersLocal !== null) {
+      const playersParse = JSON.parse(playersLocal);
+      playersParse.unshift(nickname);
+      localStorage.setItem("players", JSON.stringify(playersParse));
     }
     setNickname("");
     setOpen(false);
     setNotification({
       visible: true,
       status: "success",
-      message: t('messages:playerAdded'),
+      message: t("messages:playerAdded"),
     });
   };
-  
 
-  
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
         as="div"
         className="fixed z-10 inset-0 overflow-y-auto"
-        initialFocus={cancelButtonRef}
+        initialFocus={nicknameRef}
         onClose={setOpen}
       >
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -91,15 +110,35 @@ export default function PlayerModal({
                     </svg>
                   </div>
 
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full block">
                     <input
-                      onChange={(e) => setNickname(e.target.value)}
+                      onChange={(e) => handleMinLength(e)}
                       type="text"
-                      name=""
-                      id=""
-                      placeholder={t('common:nickname')}
-                      className="w-full h-12 bg-slate-200 dark:bg-dark-green rounded-md p-4 border border-slate-300 dark:border-lemon-green dark:text-lemon-green dark:placeholder:text-lime-600"
+                      id="nickname"
+                      required
+                      onKeyPress={(e) =>
+                        e.key === "Enter" ? handleAddPlayer() : ""
+                      }
+                      ref={nicknameRef}
+                      placeholder={t("common:nickname")}
+                      className={`w-full h-12 bg-slate-200 dark:bg-dark-green
+                      rounded-md p-4 border border-slate-300 
+                      dark:border-lemon-green dark:text-lemon-green 
+                      dark:placeholder:text-lime-600
+                      ${
+                        minError
+                          ? "ring-2 ring-red-500 dark:border-red-500"
+                          : ""
+                      }
+                      `}
                     />
+                    {minError ? (
+                      <p className="text-sm text-red-500 pt-2">
+                        {t("messages:minNicknameLength")}
+                      </p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
               </div>
@@ -110,15 +149,14 @@ export default function PlayerModal({
                   onClick={() => handleAddPlayer()}
                   disabled={isButtonDisabled}
                 >
-                  {t('common:create')}
+                  {t("common:create")}
                 </button>
                 <button
                   type="button"
                   className="mt-3 w-full transition delay-50 duration-150 hover:scale-105 dark:hover:text-lime-100 inline-flex justify-center rounded-md px-4 py-2 text-base font-medium dark:text-lemon-green sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                   onClick={() => setOpen(false)}
-                  ref={cancelButtonRef}
                 >
-                  {t('common:close')}
+                  {t("common:close")}
                 </button>
               </div>
             </div>
