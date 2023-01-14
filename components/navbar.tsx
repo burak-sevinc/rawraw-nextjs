@@ -11,9 +11,9 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    console.log(theme)
-  }, [theme])
-  
+    console.log(theme);
+  }, [theme]);
+
   const LanguageSwitcher = () => {
     return (
       <>
@@ -75,6 +75,7 @@ export default function Navbar() {
       </>
     );
   };
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -83,10 +84,33 @@ export default function Navbar() {
     return null;
   }
 
-
+  const RawrawLogo = () => {
+    if (theme == "dark") {
+      return (
+        <Image src="/red_logo.svg" height={50} width={90} alt="Red logo" />
+      );
+    } else if (theme == "psy") {
+      return (
+        <Image
+          src="/high_logo.svg"
+          height={50}
+          width={90}
+          alt="Psychedelic logo"
+        />
+      );
+    }
+    return (
+      <Image
+        src="/yellow_logo.svg"
+        height={50}
+        width={90}
+        alt="Yellow logo"
+      />
+    );
+  };
 
   return (
-    <nav className={`${theme} bg-first border-b border-second`}>
+    <nav className={`${theme} bg-first border-b border-second mb-6`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-3 items-center h-[5rem]">
           <div className="flex space-x-2">
@@ -94,24 +118,12 @@ export default function Navbar() {
           </div>
           <div className="flex justify-center">
             <div className="flex-shrink-0 flex items-center">
-              {theme == "light" ? (
-                <Image
-                  src="/yellow_logo.svg"
-                  height={50}
-                  width={90}
-                  alt="rawrawyellow"
-                />
-              ) : (
-                <Image
-                  src="/red_logo.svg"
-                  height={50}
-                  width={90}
-                  alt="rawrawred"
-                />
-              )}
+              {<RawrawLogo />}
             </div>
           </div>
-          <div className="flex justify-end"><ThemeSelector setTheme={setTheme} /></div>
+          <div className="flex justify-end">
+            <ThemeSelector setTheme={setTheme} />
+          </div>
         </div>
       </div>
     </nav>

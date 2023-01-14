@@ -42,14 +42,14 @@ export default function ThemeSelector({ setTheme }: any) {
                 <Menu.Item>
                   <div
                     onClick={() => setTheme("light")}
-                    className="flex cursor-pointer text-third hover:bg-third hover:text-second p-4 space-x-2 items-center text-xs grid grid-cols-3"
+                    className="flex cursor-pointer text-third hover:bg-third group hover:text-second p-4 space-x-2 items-center text-xs grid grid-cols-3"
                   >
                     <Image
                       alt="Ligt Mode"
                       src="/ashtry_cigar.svg"
                       height={50}
                       width={50}
-                      className="transition delay-50 duration-100 hover:scale-110"
+                      className="transition delay-50 duration-100 group-hover:scale-110"
                     />
                     <p>Light</p>
                   </div>
@@ -57,14 +57,14 @@ export default function ThemeSelector({ setTheme }: any) {
                 <Menu.Item>
                   <div
                     onClick={() => setTheme("dark")}
-                    className="flex cursor-pointer text-third hover:bg-third hover:text-second p-4 space-x-2 items-center text-xs grid grid-cols-3"
+                    className="flex cursor-pointer text-third hover:bg-third group hover:text-second p-4 space-x-2 items-center text-xs grid grid-cols-3"
                   >
                     <Image
                       alt="Dark Mode"
                       src="/lighter.svg"
                       height={50}
                       width={35}
-                      className="transition delay-50 duration-100 hover:scale-110"
+                      className="transition delay-50 duration-100 group-hover:scale-110"
                     />
                     <p>Dark</p>
                   </div>
@@ -72,14 +72,14 @@ export default function ThemeSelector({ setTheme }: any) {
                 <Menu.Item>
                   <div
                     onClick={() => setTheme("psy")}
-                    className="flex cursor-pointer text-third hover:bg-third hover:text-second p-4 space-x-2 items-center text-xs grid grid-cols-3"
+                    className="flex cursor-pointer text-third hover:bg-third group hover:text-second p-4 space-x-2 items-center text-xs grid grid-cols-3"
                   >
                     <Image
                       alt="Psychedelic Mode"
                       src="/smiley.svg"
                       height={50}
                       width={35}
-                      className="transition delay-50 duration-100 hover:scale-110"
+                      className="transition delay-50 duration-100 group-hover:scale-110"
                     />
                     <p>Psychedelic</p>
                   </div>

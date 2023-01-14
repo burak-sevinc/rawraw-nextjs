@@ -19,6 +19,8 @@ module.exports = {
       second: "var(--color-second)",
       third: "var(--color-third)",
       fourth: "var(--color-fourth)",
+      fifth: "var(--color-fifth)",
+      main: "var(--color-main)",
       ...colors,
     },
     borderColor: {

@@ -11,9 +11,9 @@ export default function Layout({ children, font }:any) {
   }, [theme])
   
   return (
-    <div className="dark:bg-dark h-full">
+    <div className={`${theme} bg-main h-full`}>
       <Navbar />
-      <main className={`${theme} ${font.className}`}>
+      <main className={`${font.className}`}>
         <div className="max-h-screen h-screen">
             {children}
         </div>
