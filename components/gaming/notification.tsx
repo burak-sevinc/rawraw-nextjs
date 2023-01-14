@@ -79,12 +79,12 @@ export default function Notification({ notification, setNotification }: any) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="max-w-sm w-full bg-white dark:bg-lemon-green rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div className="max-w-sm w-full bg-second rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="p-4">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">{icon(notification)}</div>
                   <div className="ml-3 w-0 flex-1 pt-0.5">
-                    <p className="text-sm font-medium text-gray-900 dark:text-dark-green">
+                    <p className="text-sm font-medium text-third">
                       {notification.message}
                     </p>
                     {/* <p className="mt-1 text-sm text-gray-500">
@@ -93,7 +93,7 @@ export default function Notification({ notification, setNotification }: any) {
                   </div>
                   <div className="ml-4 flex-shrink-0 flex">
                     <button
-                      className="inline-flex dark:text-dark-green dark:hover:text-dark transition delay-50 duration-200 hover:scale-105"
+                      className="inline-flex text-fourth hover:text-third transition delay-50 duration-200 hover:scale-105"
                       onClick={() => {
                         setNotification({
                           visible: false,

@@ -2,6 +2,12 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Dialog, Transition } from "@headlessui/react";
+import { useTheme } from "next-themes";
+import { Roboto_Mono } from "@next/font/google";
+
+const robotoMono = Roboto_Mono({
+  subsets: ['latin']
+})
 
 export default function ResetModal({
   resetModal,
@@ -12,6 +18,8 @@ export default function ResetModal({
   const { t } = useTranslation();
   const cancelButtonRef = useRef(null);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState(theme)
   const handleResetButton = async () => {
     handleReset();
     setIsButtonDisabled(true);
@@ -25,13 +33,14 @@ export default function ResetModal({
 
   useEffect(() => {
     setIsButtonDisabled(false);
-  }, [resetModal]);
+    setCurrentTheme(theme);
+  }, [resetModal, theme]);
 
   return (
     <Transition.Root show={resetModal} as={Fragment}>
       <Dialog
         as="div"
-        className="fixed z-10 inset-0 overflow-y-auto"
+        className={`${currentTheme} ${robotoMono.className} fixed z-10 inset-0 overflow-y-auto`}
         initialFocus={cancelButtonRef}
         onClose={setResetModal}
       >
@@ -45,7 +54,7 @@ export default function ResetModal({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-dark bg-opacity-80 transition-opacity" />
+            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-80 transition-opacity" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -64,9 +73,9 @@ export default function ResetModal({
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="relative justify-center inline-block align-bottom bg-white dark:bg-dark-green rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div className="relative justify-center inline-block align-bottom bg-second rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
               <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <div className="w-full block text-slate-600 dark:text-lemon-haze space-y-2">
+                <div className="w-full block text-third space-y-2">
                   <h2 className="font-bold text-lg">
                     {t("common:resetTitle")}
                   </h2>
@@ -76,7 +85,7 @@ export default function ResetModal({
               <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button
                   type="button"
-                  className="transition delay-50 duration-150 bg-slate-200 hover:scale-105 w-full inline-flex justify-center rounded-md border border-slate-300 hover:bg-slate-400 hover:text-slate-100 shadow-sm px-4 py-2 dark:bg-lemon-green text-slate-600 text-base font-medium text-white dark:text-dark-green dark:hover:shadow-lg dark:hover:shadow-light-green sm:ml-3 sm:w-auto sm:text-sm"
+                  className="transition delay-50 duration-150 hover:scale-105 w-full inline-flex justify-center rounded-md border border-third hover:bg-fourth hover:text-white shadow-sm px-4 py-2 bg-second text-third sm:ml-3 sm:w-auto sm:text-sm"
                   onClick={() => handleResetButton()}
                   disabled={isButtonDisabled}
                 >
@@ -84,7 +93,7 @@ export default function ResetModal({
                 </button>
                 <button
                   type="button"
-                  className="mt-3 w-full transition delay-50 duration-150 hover:scale-105 dark:hover:text-lime-100 inline-flex justify-center rounded-md px-4 py-2 text-base font-medium dark:text-lemon-green sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="mt-3 w-full transition delay-50 duration-150 hover:scale-105 hover:text-white inline-flex justify-center rounded-md px-4 py-2 text-third sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                   onClick={() => setResetModal(false)}
                   ref={cancelButtonRef}
                 >

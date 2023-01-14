@@ -22,7 +22,7 @@ export default function GameArea({
 }: any) {
   const [currentPlayer, setCurrentPlayer] = useState("");
   const [gameTime, setGameTime] = useState(0);
-  const [nextTopicButtonDisabled, setNextTopicButtonDisabled] = useState(false)
+  const [nextTopicButtonDisabled, setNextTopicButtonDisabled] = useState(false);
   const [paused, setPaused] = useState(true);
   const [resetModal, setResetModal] = useState(false);
   const [resetButtonDisabled, setResetButtonDisabled] = useState(true);
@@ -32,6 +32,9 @@ export default function GameArea({
     message: "",
   });
   const { t } = useTranslation();
+
+
+
   useEffect(() => {
     if (players.length == 0) {
       setCurrentPlayer("");
@@ -53,33 +56,31 @@ export default function GameArea({
   }, [gameTime, paused, players]);
 
   useEffect(() => {
-    if(gameTime < 3){
-      if(paused){
-        setNextTopicButtonDisabled(false)
-      }else{
-        setNextTopicButtonDisabled(true)
+    if (gameTime < 3) {
+      if (paused) {
+        setNextTopicButtonDisabled(false);
+      } else {
+        setNextTopicButtonDisabled(true);
       }
-    }else{
-      setNextTopicButtonDisabled(false)
+    } else {
+      setNextTopicButtonDisabled(false);
     }
-  }, [gameTime, nextTopicButtonDisabled, paused])
-  
+  }, [gameTime, nextTopicButtonDisabled, paused]);
 
-  function random(e:[]) {
+  function random(e: []) {
     const count = e.length;
     return Math.floor(Math.random() * count);
   }
 
   function removeTopic(topicId: number) {
-    setTopics((topics:Topics): any => {
+    setTopics((topics: Topics): any => {
       return topics.filter((value, i) => i !== topicId);
     });
     localStorage.setItem("topics", JSON.stringify(topics));
   }
-  
 
   const handleNextTopic = () => {
-    if(nextTopicButtonDisabled){
+    if (nextTopicButtonDisabled) {
       setNotification({
         visible: true,
         status: "error",
@@ -157,7 +158,7 @@ export default function GameArea({
     setPreviousTopics([]);
     setPlayers([]);
     setGameTime(0);
-    setResetButtonDisabled(true)
+    setResetButtonDisabled(true);
     localStorage.setItem("previousTopics", JSON.stringify([]));
     localStorage.setItem("topics", JSON.stringify([]));
     localStorage.setItem("players", JSON.stringify([]));
@@ -175,7 +176,7 @@ export default function GameArea({
         notification={notification}
         setNotification={setNotification}
       />
-      <div className="p-4 bg-slate-200 rounded-md dark:bg-dark-green">
+      <div className="p-4 bg-second rounded-md">
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4 lg:space-y-0 space-y-4">
           <div className="lg:col-span-2 flex space-x-2 justify-center">
             <CountDown gameTime={gameTime} />
@@ -196,12 +197,9 @@ export default function GameArea({
         {!resetButtonDisabled ? (
           <div className="pt-4 flex justify-end">
             <span
-              className="bg-slate-300/50 shadow-lg 
-          rounded-full text-slate-600 p-2 border 
-          border-slate-300 hover:bg-slate-300/90
-          dark:bg-lemon-haze dark:text-dark-green 
-          dark:border-lemon-green dark:hover:bg-light-green
-          dark:hover:text-lemon-haze"
+              className="bg-third/50 shadow-lg 
+          rounded-full text-third p-2 border 
+          border-third hover:bg-third hover:text-second"
               onClick={() => handleResetButton()}
             >
               <svg

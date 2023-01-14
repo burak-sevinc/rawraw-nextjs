@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
+
+.light {
+    --color-first: #c8d4d7;
+    --color-second: #bbd0cf;
+    --color-third: #354244;
+    --color-fourth: #808d97;
+}
+.dark {
+    --color-first: #181818;
+    --color-second: #1E5128;
+    --color-third: #FFE77AFF;
+    --color-fourth: #4E9F3D;
+}
+.psy {
+    --color-first: #3A2170;
+    --color-second: #DB831C;
+    --color-third: #DE4959;
+    --color-fourth: #11808C;
+}
+
 @tailwind utilities;

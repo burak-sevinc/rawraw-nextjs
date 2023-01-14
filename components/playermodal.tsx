@@ -2,7 +2,12 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Dialog, Transition } from "@headlessui/react";
+import { useTheme } from "next-themes";
+import { Roboto_Mono } from "@next/font/google";
 
+const robotoMono = Roboto_Mono({
+  subsets: ['latin']
+})
 export default function PlayerModal({
   open,
   setOpen,
@@ -15,10 +20,13 @@ export default function PlayerModal({
   const [nickname, setNickname] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [minError, setMinError] = useState(false);
+  const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState(theme)
 
   useEffect(() => {
     !open ? setMinError(false) : ""
-  }, [open]);
+    setCurrentTheme(theme)
+  }, [open, theme]);
 
   const handleMinLength = (e: any) => {
     if (nicknameRef.current?.value == "") {
@@ -57,7 +65,7 @@ export default function PlayerModal({
     <Transition.Root show={open} as={Fragment}>
       <Dialog
         as="div"
-        className="fixed z-10 inset-0 overflow-y-auto"
+        className={`${currentTheme} ${robotoMono.className} fixed z-10 inset-0 overflow-y-auto`}
         initialFocus={nicknameRef}
         onClose={setOpen}
       >
@@ -71,7 +79,7 @@ export default function PlayerModal({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-dark bg-opacity-80 transition-opacity" />
+            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-80 transition-opacity" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -90,12 +98,12 @@ export default function PlayerModal({
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="relative justify-center inline-block align-bottom bg-white dark:bg-dark-green rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div className="relative justify-center inline-block align-bottom bg-second rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
               <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="w-full grid grid-cols-1 flex px-4 justify-items-center space-y-4">
-                  <div className="mx-auto flex-shrink-0 flex md:col-span-1 items-center justify-center lg:h-12 lg:w-12 w-1/2 h-24 rounded-full bg-dark sm:mx-0 sm:h-10 sm:w-10">
+                  <div className="mx-auto flex-shrink-0 flex md:col-span-1 items-center justify-center lg:h-12 lg:w-12 w-1/2 h-24 rounded-full bg-fourth sm:mx-0 sm:h-10 sm:w-10">
                     <svg
-                      className="lg:h-6 lg:w-6 w-1/2 text-slate-200 dark:text-lemon-green"
+                      className="lg:h-6 lg:w-6 w-1/2 text-third"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -121,10 +129,10 @@ export default function PlayerModal({
                       }
                       ref={nicknameRef}
                       placeholder={t("common:nickname")}
-                      className={`w-full h-12 bg-slate-200 dark:bg-dark-green
-                      rounded-md p-4 border border-slate-300 
-                      dark:border-lemon-green dark:text-lemon-green 
-                      dark:placeholder:text-lime-600
+                      className={`w-full h-12 bg-second
+                      rounded-md p-4 border border-third 
+                      text-third
+                      placeholder:text-third
                       ${
                         minError
                           ? "ring-2 ring-red-500 dark:border-red-500"
@@ -145,7 +153,7 @@ export default function PlayerModal({
               <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button
                   type="button"
-                  className="transition delay-50 duration-150 bg-slate-200 hover:scale-105 w-full inline-flex justify-center rounded-md border border-slate-300 hover:bg-slate-400 hover:text-slate-100 shadow-sm px-4 py-2 dark:bg-lemon-green text-slate-600 text-base font-medium text-white dark:text-dark-green dark:hover:shadow-lg dark:hover:shadow-light-green sm:ml-3 sm:w-auto sm:text-sm"
+                  className="transition delay-50 duration-150 bg-second hover:scale-105 w-full inline-flex justify-center rounded-md border border-third hover:bg-fourth hover:text-white shadow-sm px-4 py-2 text-third sm:ml-3 sm:w-auto sm:text-sm"
                   onClick={() => handleAddPlayer()}
                   disabled={isButtonDisabled}
                 >
@@ -153,7 +161,7 @@ export default function PlayerModal({
                 </button>
                 <button
                   type="button"
-                  className="mt-3 w-full transition delay-50 duration-150 hover:scale-105 dark:hover:text-lime-100 inline-flex justify-center rounded-md px-4 py-2 text-base font-medium dark:text-lemon-green sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="mt-3 w-full transition delay-50 duration-150 hover:scale-105 dark:hover:text-lime-100 inline-flex justify-center rounded-md px-4 py-2 text-third sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                   onClick={() => setOpen(false)}
                 >
                   {t("common:close")}

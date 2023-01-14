@@ -3,40 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import ThemeSelector from "./themeselector";
 
 export default function Navbar() {
   const { locale } = useRouter();
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const renderThemeChanger = () => {
-    const currentTheme = theme === "system" ? systemTheme : theme;
 
-    if (currentTheme == "dark") {
-      return (
-        <div className="p-1 rounded-full flex space-x-8">
-          <span className="sr-only">Dark mode toggle</span>
-          <Image
-            onClick={() => setTheme("light")}
-            alt="light_mode"
-            src="/ashtry_cigar.svg"
-            height={50}
-            width={50}
-            className="transition delay-50 duration-100 hover:scale-110"
-          />
-        </div>
-      );
-    } else {
-      return (
-        <div
-          onClick={() => setTheme("dark")}
-          className="p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        >
-          <Image alt="light_mode" src="/lighter.svg" height={50} width={50} />
-        </div>
-      );
-    }
-  };
-
+  useEffect(() => {
+    console.log(theme)
+  }, [theme])
+  
   const LanguageSwitcher = () => {
     return (
       <>
@@ -106,8 +83,10 @@ export default function Navbar() {
     return null;
   }
 
+
+
   return (
-    <nav className="bg-white border dark:border-0 dark:bg-navbar-dark dark:border-b dark:border-navbar-border">
+    <nav className={`${theme} bg-first border-b border-second`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-3 items-center h-[5rem]">
           <div className="flex space-x-2">
@@ -132,7 +111,7 @@ export default function Navbar() {
               )}
             </div>
           </div>
-          <div className="flex justify-end">{renderThemeChanger()}</div>
+          <div className="flex justify-end"><ThemeSelector setTheme={setTheme} /></div>
         </div>
       </div>
     </nav>

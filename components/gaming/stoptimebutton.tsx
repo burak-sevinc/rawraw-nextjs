@@ -78,7 +78,7 @@ export default function StopTimeButton({ paused, currentTopic }: any) {
   };
 
   return (
-    <div className="cursor-pointer p-4 hover:text-slate-800 hover:bg-slate-300 border-slate-300 hover:border-slate-400 text-slate-600 transition delay-50 duration-300 hover:scale-105 dark:hover:bg-lemon-haze p-4 dark:bg-dark-green dark:text-lemon-green dark:hover:text-dark-green border dark:border-lemon-green shadow-xl rounded-xl h-full flex justify-center items-center">
+    <div className="cursor-pointer p-4 transition delay-50 duration-300 hover:scale-105 text-third hover:text-second hover:bg-third border-third hover:border-fourth  p-4 border rounded-xl h-full flex justify-center items-center">
       <div className="justify-center">{Button()}</div>
     </div>
   );
