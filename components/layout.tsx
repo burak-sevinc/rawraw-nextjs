@@ -7,7 +7,6 @@ export default function Layout({ children, font }:any) {
   const [currentTheme, setCurrentTheme] = useState(theme)
   useEffect(() => {
     setCurrentTheme(theme)
-    console.log("current theme", theme)
   }, [theme])
   
   return (

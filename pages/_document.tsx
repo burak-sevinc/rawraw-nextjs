@@ -9,13 +9,12 @@ export default function Document() {
 
   useEffect(() => {
     setCurrentTheme(theme)
-    console.log("current theme:", theme)
   }, [theme])
   
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className={`${theme} bg-main`} >
         <Main />
         <NextScript />
       </body>

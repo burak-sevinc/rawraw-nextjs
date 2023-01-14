@@ -10,10 +10,6 @@ export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    console.log(theme);
-  }, [theme]);
-
   const LanguageSwitcher = () => {
     return (
       <>
