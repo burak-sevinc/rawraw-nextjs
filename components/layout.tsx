@@ -14,7 +14,7 @@ export default function Layout({ children, font }:any) {
     <div className={`${theme} bg-main h-full`}>
       <Navbar />
       <main className={`${font.className}`}>
-        <div className="max-h-screen h-screen">
+        <div className="max-h-screen h-screen pb-8">
             {children}
         </div>
       </main>

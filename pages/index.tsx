@@ -88,6 +88,8 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
     <title>Rawraw Game</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     </Head>
+    <div className="pb-12 md:pb-8 lg:pb-0">
+
       <div className="lg:grid-rows-2 rounded-xl shadow-2xl shadow-second border border-third bg-fifth grid lg:grid-cols-4 grid-cols-1 md:mx-12 mx-4 lg:mx-44 xl:mx-64 lg:space-x-4 lg:space-y-0 space-y-4 p-4">
         <div className="lg:col-span-1 lg:row-span-2 col-span-1 space-y-4">
           <Players players={players} setPlayers={setPlayers} />
@@ -106,6 +108,7 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
           <PreviousTopics previousTopics={previousTopics} />
         </div>
       </div>
+    </div>
     </>
   );
 }
