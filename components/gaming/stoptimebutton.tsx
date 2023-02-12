@@ -61,7 +61,7 @@ export default function StopTimeButton() {
   };
 
   const Button = () => {
-    if (currentTopic != "") {
+    if (currentTopic.name != "") {
       return (
         <>
           <div className="flex justify-center">
