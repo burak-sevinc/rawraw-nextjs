@@ -1,0 +1,1038 @@
+[
+ {
+  "name": "the witcher",
+  "category": "dizi & film"
+ },
+ {
+  "name": "game of thrones",
+  "category": "dizi & film"
+ },
+ {
+  "name": "breaking bad",
+  "category": "dizi & film"
+ },
+ {
+  "name": "stranger things",
+  "category": "dizi & film"
+ },
+ {
+  "name": "the walking dead",
+  "category": "dizi & film"
+ },
+ {
+  "name": "the big bang theory",
+  "category": "dizi & film"
+ },
+ {
+  "name": "friends",
+  "category": "dizi & film"
+ },
+ {
+  "name": "the lord of the rings",
+  "category": "dizi & film"
+ },
+ {
+  "name": "the marvel cinematic universe",
+  "category": "dizi & film"
+ },
+ {
+  "name": "harry potter franchise",
+  "category": "dizi & film"
+ },
+ {
+  "name": "futbol",
+  "category": "spor"
+ },
+ {
+  "name": "basketbol",
+  "category": "spor"
+ },
+ {
+  "name": "voleybol",
+  "category": "spor"
+ },
+ {
+  "name": "tenis",
+  "category": "spor"
+ },
+ {
+  "name": "atletizm",
+  "category": "spor"
+ },
+ {
+  "name": "badminton",
+  "category": "spor"
+ },
+ {
+  "name": "american football",
+  "category": "spor"
+ },
+ {
+  "name": "hokey",
+  "category": "spor"
+ },
+ {
+  "name": "golft",
+  "category": "spor"
+ },
+ {
+  "name": "yoga",
+  "category": "spor"
+ },
+ {
+  "name": "paris, fransa",
+  "category": "tatil"
+ },
+ {
+  "name": "roma, italya",
+  "category": "tatil"
+ },
+ {
+  "name": "istanbul, türkiye",
+  "category": "tatil"
+ },
+ {
+  "name": "bangkok, tayland",
+  "category": "tatil"
+ },
+ {
+  "name": "new york, abd",
+  "category": "tatil"
+ },
+ {
+  "name": "ariana grande",
+  "category": "müzik"
+ },
+ {
+  "name": "drake",
+  "category": "müzik"
+ },
+ {
+  "name": "ed sheeran",
+  "category": "müzik"
+ },
+ {
+  "name": "justin bieber",
+  "category": "müzik"
+ },
+ {
+  "name": "billie eilish",
+  "category": "müzik"
+ },
+ {
+  "name": "lady gaga",
+  "category": "müzik"
+ },
+ {
+  "name": "the weeknd",
+  "category": "müzik"
+ },
+ {
+  "name": "dua lipa",
+  "category": "müzik"
+ },
+ {
+  "name": "post malone",
+  "category": "müzik"
+ },
+ {
+  "name": "kendrick lamar",
+  "category": "müzik"
+ },
+ {
+  "name": "kedi",
+  "category": "hayvan"
+ },
+ {
+  "name": "köpek",
+  "category": "hayvan"
+ },
+ {
+  "name": "tavşan",
+  "category": "hayvan"
+ },
+ {
+  "name": "kuşlar",
+  "category": "hayvan"
+ },
+ {
+  "name": "keçi",
+  "category": "hayvan"
+ },
+ {
+  "name": "at",
+  "category": "hayvan"
+ },
+ {
+  "name": "papagan",
+  "category": "hayvan"
+ },
+ {
+  "name": "eşek",
+  "category": "hayvan"
+ },
+ {
+  "name": "sıçan",
+  "category": "hayvan"
+ },
+ {
+  "name": "hamster",
+  "category": "hayvan"
+ },
+ {
+  "name": "ormanlar",
+  "category": "doğa"
+ },
+ {
+  "name": "dağlar",
+  "category": "doğa"
+ },
+ {
+  "name": "volkanlar",
+  "category": "doğa"
+ },
+ {
+  "name": "denizler",
+  "category": "doğa"
+ },
+ {
+  "name": "nehirler",
+  "category": "doğa"
+ },
+ {
+  "name": "çiçekler",
+  "category": "doğa"
+ },
+ {
+  "name": "meyveler",
+  "category": "doğa"
+ },
+ {
+  "name": "ağaçlar",
+  "category": "doğa"
+ },
+ {
+  "name": "su bitkileri",
+  "category": "doğa"
+ },
+ {
+  "name": "otlar",
+  "category": "doğa"
+ },
+ {
+  "name": "to kill a mockingbird by harper lee",
+  "category": "edebiyat"
+ },
+ {
+  "name": "1984 by george orwell",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the great gatsby by f. scott fitzgerald",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the lord of the rings by j.r.r. tolkien",
+  "category": "edebiyat"
+ },
+ {
+  "name": "harry potter series by j.k. rowling",
+  "category": "edebiyat"
+ },
+ {
+  "name": "pride and prejudice by jane austen",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the diary of a young girl by anne frank",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the hitchhiker's guide to the galaxy by douglas adams",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the hunger games by suzanne collins",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the catcher in the rye by j.d. salinger",
+  "category": "edebiyat"
+ },
+ {
+  "name": "islam tarihi",
+  "category": "tarih"
+ },
+ {
+  "name": "osmanlı imparatorluğu",
+  "category": "tarih"
+ },
+ {
+  "name": "antik yunan ve roma dönemi",
+  "category": "tarih"
+ },
+ {
+  "name": "orta çağ avrupa'sı",
+  "category": "tarih"
+ },
+ {
+  "name": "fransız devrimi",
+  "category": "tarih"
+ },
+ {
+  "name": "amerikan bağımsızlık savaşı",
+  "category": "tarih"
+ },
+ {
+  "name": "ikinci dünya savaşı",
+  "category": "tarih"
+ },
+ {
+  "name": "viet nam savaşı",
+  "category": "tarih"
+ },
+ {
+  "name": "sovyetler birliği",
+  "category": "tarih"
+ },
+ {
+  "name": "kuzey kore ve güney kore arasındaki ayrılık.",
+  "category": "tarih"
+ },
+ {
+  "name": "fortnite",
+  "category": "oyun"
+ },
+ {
+  "name": "minecraft",
+  "category": "oyun"
+ },
+ {
+  "name": "pubg",
+  "category": "oyun"
+ },
+ {
+  "name": "call of duty",
+  "category": "oyun"
+ },
+ {
+  "name": "apex legends",
+  "category": "oyun"
+ },
+ {
+  "name": "league of legends",
+  "category": "oyun"
+ },
+ {
+  "name": "overwatch",
+  "category": "oyun"
+ },
+ {
+  "name": "world of warcraft",
+  "category": "oyun"
+ },
+ {
+  "name": "grand theft auto v",
+  "category": "oyun"
+ },
+ {
+  "name": "the legend of zelda",
+  "category": "oyun"
+ },
+ {
+  "name": "diyet ve beslenme",
+  "category": "sağlık"
+ },
+ {
+  "name": "fitness ve egzersiz",
+  "category": "sağlık"
+ },
+ {
+  "name": "yoga ve meditasyon",
+  "category": "sağlık"
+ },
+ {
+  "name": "uyku ve uyku rutinleri",
+  "category": "sağlık"
+ },
+ {
+  "name": "stres yönetimi",
+  "category": "sağlık"
+ },
+ {
+  "name": "aromaterapi",
+  "category": "sağlık"
+ },
+ {
+  "name": "akupunktur",
+  "category": "sağlık"
+ },
+ {
+  "name": "masaj terapisi",
+  "category": "sağlık"
+ },
+ {
+  "name": "şifalı bitkiler ve doğal ilaçlar",
+  "category": "sağlık"
+ },
+ {
+  "name": "resim ve fotoğraf",
+  "category": "sanat"
+ },
+ {
+  "name": "müzik ve sesli sanatlar",
+  "category": "sanat"
+ },
+ {
+  "name": "tiyatro ve sahne",
+  "category": "sanat"
+ },
+ {
+  "name": "film ve sinema",
+  "category": "sanat"
+ },
+ {
+  "name": "dans ve performans sanatları",
+  "category": "sanat"
+ },
+ {
+  "name": "görsel sanatlar ve tasarım",
+  "category": "sanat"
+ },
+ {
+  "name": "kitap ve yazın sanatı",
+  "category": "sanat"
+ },
+ {
+  "name": "mimari ve şehir planlaması",
+  "category": "sanat"
+ },
+ {
+  "name": "mode ve giyim",
+  "category": "sanat"
+ },
+ {
+  "name": "kukla ve oyunculuk",
+  "category": "sanat"
+ },
+ {
+  "name": "sosyal adalet ve eşitliği",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "insan hakları ve özgürlükleri",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "küresel iklim değişikliği ve çevre koruma",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "ülkeler arasındaki diplomasi ve ilişkiler",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "güncel olaylar ve haberler",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "ulusal güvenlik ve istihbarat",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "ekonomik büyüme ve istikrar",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "kamu yönetimi ve hükümet sistemleri",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "sosyal sınıflar ve sosyo-ekonomik eşitsizlik",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "toplumsal cinsiyet eşitliği ve lgbt hakları.",
+  "category": "politika & toplum"
+ },
+ {
+  "name": "michael jordan",
+  "category": "basketbol"
+ },
+ {
+  "name": "lebron james",
+  "category": "basketbol"
+ },
+ {
+  "name": "kobe bryant",
+  "category": "basketbol"
+ },
+ {
+  "name": "steph curry",
+  "category": "basketbol"
+ },
+ {
+  "name": "shaquille o'neal",
+  "category": "basketbol"
+ },
+ {
+  "name": "cristiano ronaldo",
+  "category": "futbol"
+ },
+ {
+  "name": "lionel messi",
+  "category": "futbol"
+ },
+ {
+  "name": "neymar jr.",
+  "category": "futbol"
+ },
+ {
+  "name": "kylian mbappé",
+  "category": "futbol"
+ },
+ {
+  "name": "luis suárez",
+  "category": "futbol"
+ },
+ {
+  "name": "tom brady",
+  "category": "amerikan futbolu"
+ },
+ {
+  "name": "patrick mahomes",
+  "category": "amerikan futbolu"
+ },
+ {
+  "name": "aaron rodgers",
+  "category": "amerikan futbolu"
+ },
+ {
+  "name": "drew brees",
+  "category": "amerikan futbolu"
+ },
+ {
+  "name": "russell wilson",
+  "category": "amerikan futbolu"
+ },
+ {
+  "name": "babe ruth",
+  "category": "beyzbol"
+ },
+ {
+  "name": "ty cobb",
+  "category": "beyzbol"
+ },
+ {
+  "name": "mickey mantle",
+  "category": "beyzbol"
+ },
+ {
+  "name": "derek jeter",
+  "category": "beyzbol"
+ },
+ {
+  "name": "mike trout",
+  "category": "beyzbol"
+ },
+ {
+  "name": "roger federer",
+  "category": "tenis"
+ },
+ {
+  "name": "rafael nadal",
+  "category": "tenis"
+ },
+ {
+  "name": "novak djokovic",
+  "category": "tenis"
+ },
+ {
+  "name": "serena williams",
+  "category": "tenis"
+ },
+ {
+  "name": "maria sharapova",
+  "category": "tenis"
+ },
+ {
+  "name": "justin bieber",
+  "category": "müzik"
+ },
+ {
+  "name": "ariana grande",
+  "category": "müzik"
+ },
+ {
+  "name": "taylor swift",
+  "category": "müzik"
+ },
+ {
+  "name": "beyoncé",
+  "category": "müzik"
+ },
+ {
+  "name": "ed sheeran",
+  "category": "müzik"
+ },
+ {
+  "name": "kendrick lamar",
+  "category": "müzik"
+ },
+ {
+  "name": "drake",
+  "category": "müzik"
+ },
+ {
+  "name": "j. cole",
+  "category": "müzik"
+ },
+ {
+  "name": "travis scott",
+  "category": "müzik"
+ },
+ {
+  "name": "cardi b",
+  "category": "müzik"
+ },
+ {
+  "name": "the beatles",
+  "category": "müzik"
+ },
+ {
+  "name": "led zeppelin",
+  "category": "müzik"
+ },
+ {
+  "name": "the rolling stones",
+  "category": "müzik"
+ },
+ {
+  "name": "ac\/dc",
+  "category": "müzik"
+ },
+ {
+  "name": "guns n' roses",
+  "category": "müzik"
+ },
+ {
+  "name": "garth brooks",
+  "category": "müzik"
+ },
+ {
+  "name": "johnny cash",
+  "category": "müzik"
+ },
+ {
+  "name": "willie nelson",
+  "category": "müzik"
+ },
+ {
+  "name": "george strait",
+  "category": "müzik"
+ },
+ {
+  "name": "dolly parton",
+  "category": "müzik"
+ },
+ {
+  "name": "daft punk",
+  "category": "müzik"
+ },
+ {
+  "name": "calvin harris",
+  "category": "müzik"
+ },
+ {
+  "name": "skrillex",
+  "category": "müzik"
+ },
+ {
+  "name": "deadmau5",
+  "category": "müzik"
+ },
+ {
+  "name": "marshmello",
+  "category": "müzik"
+ },
+ {
+  "name": "the godfather",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "shawshank redemption",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "the dark knight",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "the lord of the rings",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "pulp fiction",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "game of thrones",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "breaking bad",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "the sopranos",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "the office",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "friends",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "tom hanks",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "robert de niro",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "meryl streep",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "george clooney",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "brad pitt",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "martin scorsese",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "stanley kubrick",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "steven spielberg",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "christopher nolan",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "quentin tarantino",
+  "category": "dizi & sinema"
+ },
+ {
+  "name": "pizza",
+  "category": "yemek"
+ },
+ {
+  "name": "pasta",
+  "category": "yemek"
+ },
+ {
+  "name": "risotto",
+  "category": "yemek"
+ },
+ {
+  "name": "lasagna",
+  "category": "yemek"
+ },
+ {
+  "name": "bruschetta",
+  "category": "yemek"
+ },
+ {
+  "name": "kung pao tavuğu",
+  "category": "yemek"
+ },
+ {
+  "name": "pilav",
+  "category": "yemek"
+ },
+ {
+  "name": "acı sulu çorba",
+  "category": "yemek"
+ },
+ {
+  "name": "mantı",
+  "category": "yemek"
+ },
+ {
+  "name": "simit",
+  "category": "yemek"
+ },
+ {
+  "name": "tacos",
+  "category": "yemek"
+ },
+ {
+  "name": "enchiladas",
+  "category": "yemek"
+ },
+ {
+  "name": "guacamole",
+  "category": "yemek"
+ },
+ {
+  "name": "burritos",
+  "category": "yemek"
+ },
+ {
+  "name": "quesadillas",
+  "category": "yemek"
+ },
+ {
+  "name": "biryani",
+  "category": "yemek"
+ },
+ {
+  "name": "tikka masala",
+  "category": "yemek"
+ },
+ {
+  "name": "naan",
+  "category": "yemek"
+ },
+ {
+  "name": "dosa",
+  "category": "yemek"
+ },
+ {
+  "name": "samosas",
+  "category": "yemek"
+ },
+ {
+  "name": "hamburger",
+  "category": "yemek"
+ },
+ {
+  "name": "hot dogs",
+  "category": "yemek"
+ },
+ {
+  "name": "steak",
+  "category": "yemek"
+ },
+ {
+  "name": "fried chicken",
+  "category": "yemek"
+ },
+ {
+  "name": "ribs",
+  "category": "yemek"
+ },
+ {
+  "name": "mac and cheese",
+  "category": "yemek"
+ },
+ {
+  "name": "corn on the cob",
+  "category": "yemek"
+ },
+ {
+  "name": "pride and prejudice by jane austen",
+  "category": "edebiyat"
+ },
+ {
+  "name": "to kill a mockingbird by harper lee",
+  "category": "edebiyat"
+ },
+ {
+  "name": "1984 by george orwell",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the great gatsby by f. scott fitzgerald",
+  "category": "edebiyat"
+ },
+ {
+  "name": "lord of the flies by william golding",
+  "category": "edebiyat"
+ },
+ {
+  "name": "harry potter series by j.k. rowling",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the lord of the rings by j.r.r. tolkien",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the chronicles of narnia by c.s. lewis",
+  "category": "edebiyat"
+ },
+ {
+  "name": "a song of ice and fire (game of thrones) by george r.r. martin",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the wheel of time series by robert jordan",
+  "category": "edebiyat"
+ },
+ {
+  "name": "sherlock holmes series by arthur conan doyle",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the girl with the dragon tattoo by stieg larsson",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the da vinci code by dan brown",
+  "category": "edebiyat"
+ },
+ {
+  "name": "agatha christie's hercule poirot series",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the millennium series by stieg larsson",
+  "category": "edebiyat"
+ },
+ {
+  "name": "dune by frank herbert",
+  "category": "edebiyat"
+ },
+ {
+  "name": "ender's game by orson scott card",
+  "category": "edebiyat"
+ },
+ {
+  "name": "the martian by andy weir",
+  "category": "edebiyat"
+ },
+ {
+  "name": "ready player one by ernest cline",
+  "category": "edebiyat"
+ },
+ {
+  "name": "snow crash by neal stephenson",
+  "category": "edebiyat"
+ },
+ {
+  "name": "iphone",
+  "category": "teknoloji"
+ },
+ {
+  "name": "samsung galaxy",
+  "category": "teknoloji"
+ },
+ {
+  "name": "google pixel",
+  "category": "teknoloji"
+ },
+ {
+  "name": "huawei p-series",
+  "category": "teknoloji"
+ },
+ {
+  "name": "xiaomi mi-series",
+  "category": "teknoloji"
+ },
+ {
+  "name": "facebook",
+  "category": "teknoloji"
+ },
+ {
+  "name": "instagram",
+  "category": "teknoloji"
+ },
+ {
+  "name": "twitter",
+  "category": "teknoloji"
+ },
+ {
+  "name": "tiktok",
+  "category": "teknoloji"
+ },
+ {
+  "name": "snapchat",
+  "category": "teknoloji"
+ },
+ {
+  "name": "google chrome",
+  "category": "teknoloji"
+ },
+ {
+  "name": "mozilla firefox",
+  "category": "teknoloji"
+ },
+ {
+  "name": "apple safari",
+  "category": "teknoloji"
+ },
+ {
+  "name": "ispanya",
+  "category": "tatil"
+ },
+ {
+  "name": "türkiye",
+  "category": "tatil"
+ },
+ {
+  "name": "tayland",
+  "category": "tatil"
+ },
+ {
+  "name": "endonezya",
+  "category": "tatil"
+ },
+ {
+  "name": "güney afrika",
+  "category": "tatil"
+ },
+ {
+  "name": "bali, endonezya",
+  "category": "tatil"
+ },
+ {
+  "name": "phuket, tayland",
+  "category": "tatil"
+ },
+ {
+  "name": "cancun, meksika",
+  "category": "tatil"
+ },
+ {
+  "name": "santorini, yunanistan",
+  "category": "tatil"
+ },
+ {
+  "name": "maui, hawaii",
+  "category": "tatil"
+ },
+ {
+  "name": "alpler, avusturya",
+  "category": "tatil"
+ },
+ {
+  "name": "rocky mountains, abd",
+  "category": "tatil"
+ },
+ {
+  "name": "and dağları, peru",
+  "category": "tatil"
+ },
+ {
+  "name": "kilimanjaro, tanzania",
+  "category": "tatil"
+ },
+ {
+  "name": "elbrus, rusya",
+  "category": "tatil"
+ }
+]

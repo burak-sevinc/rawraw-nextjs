@@ -1,0 +1,722 @@
+[
+ {
+  "name": "fortnite",
+  "category": "game"
+ },
+ {
+  "name": "minecraft",
+  "category": "game"
+ },
+ {
+  "name": "pubg",
+  "category": "game"
+ },
+ {
+  "name": "call of duty",
+  "category": "game"
+ },
+ {
+  "name": "apex legends",
+  "category": "game"
+ },
+ {
+  "name": "league of legends",
+  "category": "game"
+ },
+ {
+  "name": "overwatch",
+  "category": "game"
+ },
+ {
+  "name": "world of warcraft",
+  "category": "game"
+ },
+ {
+  "name": "grand theft auto v",
+  "category": "game"
+ },
+ {
+  "name": "the legend of zelda",
+  "category": "game"
+ },
+ {
+  "name": "diet and nutrition",
+  "category": "health"
+ },
+ {
+  "name": "fitness and exercise",
+  "category": "health"
+ },
+ {
+  "name": "yoga and meditation",
+  "category": "health"
+ },
+ {
+  "name": "sleep and sleep routines",
+  "category": "health"
+ },
+ {
+  "name": "stress management",
+  "category": "health"
+ },
+ {
+  "name": "aromatherapy",
+  "category": "health"
+ },
+ {
+  "name": "acupuncture",
+  "category": "health"
+ },
+ {
+  "name": "massage therapy",
+  "category": "health"
+ },
+ {
+  "name": "herbal medicine and natural remedies",
+  "category": "health"
+ },
+ {
+  "name": "mental health and emotional wellness",
+  "category": "health"
+ },
+ {
+  "name": "painting and photography art",
+  "category": "art"
+ },
+ {
+  "name": "music and audio arts",
+  "category": "art"
+ },
+ {
+  "name": "theater and performance arts",
+  "category": "art"
+ },
+ {
+  "name": "film and cinema",
+  "category": "art"
+ },
+ {
+  "name": "dance and performance arts",
+  "category": "art"
+ },
+ {
+  "name": "visual arts and design",
+  "category": "art"
+ },
+ {
+  "name": "book and literature arts",
+  "category": "art"
+ },
+ {
+  "name": "architecture and city planning",
+  "category": "art"
+ },
+ {
+  "name": "fashion and clothing",
+  "category": "art"
+ },
+ {
+  "name": "puppetry and acting",
+  "category": "art"
+ },
+ {
+  "name": "social justice and equality",
+  "category": "politics & society"
+ },
+ {
+  "name": "human rights and freedoms",
+  "category": "politics & society"
+ },
+ {
+  "name": "global climate change and environmental protection",
+  "category": "politics & society"
+ },
+ {
+  "name": "diplomacy and relationships between countries",
+  "category": "politics & society"
+ },
+ {
+  "name": "current events and news",
+  "category": "politics & society"
+ },
+ {
+  "name": "national security and intelligence",
+  "category": "politics & society"
+ },
+ {
+  "name": "economic growth and stability",
+  "category": "politics & society"
+ },
+ {
+  "name": "public administration and government systems",
+  "category": "politics & society"
+ },
+ {
+  "name": "social classes and socio-economic inequality",
+  "category": "politics & society"
+ },
+ {
+  "name": "gender equality and lgbt rights.",
+  "category": "politics & society"
+ },
+ {
+  "name": "computers and software",
+  "category": "technology"
+ },
+ {
+  "name": "mobile devices and applications",
+  "category": "technology"
+ },
+ {
+  "name": "internet and cloud technologies",
+  "category": "technology"
+ },
+ {
+  "name": "artificial intelligence and machine learning",
+  "category": "technology"
+ },
+ {
+  "name": "robotics and automation",
+  "category": "technology"
+ },
+ {
+  "name": "image and audio processing",
+  "category": "technology"
+ },
+ {
+  "name": "satellite and aviation technologies",
+  "category": "technology"
+ },
+ {
+  "name": "biomedical technologies and medicine",
+  "category": "technology"
+ },
+ {
+  "name": "solar energy and alternative energy sources",
+  "category": "technology"
+ },
+ {
+  "name": "industrial design and manufacturing technologies",
+  "category": "technology"
+ },
+ {
+  "name": "michael jordan",
+  "category": "basketball"
+ },
+ {
+  "name": "lebron james",
+  "category": "basketball"
+ },
+ {
+  "name": "kobe bryant",
+  "category": "basketball"
+ },
+ {
+  "name": "steph curry",
+  "category": "basketball"
+ },
+ {
+  "name": "shaquille o'neal",
+  "category": "basketball"
+ },
+ {
+  "name": "cristiano ronaldo",
+  "category": "soccer"
+ },
+ {
+  "name": "lionel messi",
+  "category": "soccer"
+ },
+ {
+  "name": "neymar jr.",
+  "category": "soccer"
+ },
+ {
+  "name": "kylian mbappé",
+  "category": "soccer"
+ },
+ {
+  "name": "luis suárez",
+  "category": "soccer"
+ },
+ {
+  "name": "tom brady",
+  "category": "american football"
+ },
+ {
+  "name": "patrick mahomes",
+  "category": "american football"
+ },
+ {
+  "name": "aaron rodgers",
+  "category": "american football"
+ },
+ {
+  "name": "drew brees",
+  "category": "american football"
+ },
+ {
+  "name": "russell wilson",
+  "category": "american football"
+ },
+ {
+  "name": "babe ruth",
+  "category": "baseball"
+ },
+ {
+  "name": "ty cobb",
+  "category": "baseball"
+ },
+ {
+  "name": "mickey mantle",
+  "category": "baseball"
+ },
+ {
+  "name": "derek jeter",
+  "category": "baseball"
+ },
+ {
+  "name": "mike trout",
+  "category": "baseball"
+ },
+ {
+  "name": "roger federer",
+  "category": "tennis"
+ },
+ {
+  "name": "rafael nadal",
+  "category": "tennis"
+ },
+ {
+  "name": "novak djokovic",
+  "category": "tennis"
+ },
+ {
+  "name": "serena williams",
+  "category": "tennis"
+ },
+ {
+  "name": "maria sharapova",
+  "category": "tennis"
+ },
+ {
+  "name": "justin bieber",
+  "category": "music"
+ },
+ {
+  "name": "ariana grande",
+  "category": "music"
+ },
+ {
+  "name": "taylor swift",
+  "category": "music"
+ },
+ {
+  "name": "beyoncé",
+  "category": "music"
+ },
+ {
+  "name": "ed sheeran",
+  "category": "music"
+ },
+ {
+  "name": "kendrick lamar",
+  "category": "music"
+ },
+ {
+  "name": "drake",
+  "category": "music"
+ },
+ {
+  "name": "j. cole",
+  "category": "music"
+ },
+ {
+  "name": "travis scott",
+  "category": "music"
+ },
+ {
+  "name": "cardi b",
+  "category": "music"
+ },
+ {
+  "name": "the beatles",
+  "category": "music"
+ },
+ {
+  "name": "led zeppelin",
+  "category": "music"
+ },
+ {
+  "name": "the rolling stones",
+  "category": "music"
+ },
+ {
+  "name": "ac\/dc",
+  "category": "music"
+ },
+ {
+  "name": "guns n' roses",
+  "category": "music"
+ },
+ {
+  "name": "garth brooks",
+  "category": "music"
+ },
+ {
+  "name": "johnny cash",
+  "category": "music"
+ },
+ {
+  "name": "willie nelson",
+  "category": "music"
+ },
+ {
+  "name": "george strait",
+  "category": "music"
+ },
+ {
+  "name": "dolly parton",
+  "category": "music"
+ },
+ {
+  "name": "daft punk",
+  "category": "music"
+ },
+ {
+  "name": "calvin harris",
+  "category": "music"
+ },
+ {
+  "name": "skrillex",
+  "category": "music"
+ },
+ {
+  "name": "deadmau5",
+  "category": "music"
+ },
+ {
+  "name": "marshmello",
+  "category": "music"
+ },
+ {
+  "name": "the godfather",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "shawshank redemption",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "the dark knight",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "the lord of the rings",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "pulp fiction",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "game of thrones",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "breaking bad",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "the sopranos",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "the office",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "friends",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "tom hanks",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "robert de niro",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "meryl streep",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "george clooney",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "brad pitt",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "martin scorsese",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "stanley kubrick",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "steven spielberg",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "christopher nolan",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "quentin tarantino",
+  "category": "tv & cinema"
+ },
+ {
+  "name": "pizza",
+  "category": "food"
+ },
+ {
+  "name": "pasta",
+  "category": "food"
+ },
+ {
+  "name": "risotto",
+  "category": "food"
+ },
+ {
+  "name": "lasagna",
+  "category": "food"
+ },
+ {
+  "name": "bruschetta",
+  "category": "food"
+ },
+ {
+  "name": "kung pao chicken",
+  "category": "food"
+ },
+ {
+  "name": "fried rice",
+  "category": "food"
+ },
+ {
+  "name": "hot and sour soup",
+  "category": "food"
+ },
+ {
+  "name": "dumplings",
+  "category": "food"
+ },
+ {
+  "name": "egg rolls",
+  "category": "food"
+ },
+ {
+  "name": "tacos",
+  "category": "food"
+ },
+ {
+  "name": "enchiladas",
+  "category": "food"
+ },
+ {
+  "name": "guacamole",
+  "category": "food"
+ },
+ {
+  "name": "burritos",
+  "category": "food"
+ },
+ {
+  "name": "quesadillas",
+  "category": "food"
+ },
+ {
+  "name": "biryani",
+  "category": "food"
+ },
+ {
+  "name": "tikka masala",
+  "category": "food"
+ },
+ {
+  "name": "naan",
+  "category": "food"
+ },
+ {
+  "name": "dosa",
+  "category": "food"
+ },
+ {
+  "name": "samosas",
+  "category": "food"
+ },
+ {
+  "name": "hamburgers",
+  "category": "food"
+ },
+ {
+  "name": "hot dogs",
+  "category": "food"
+ },
+ {
+  "name": "fried chicken",
+  "category": "food"
+ },
+ {
+  "name": "mac and cheese",
+  "category": "food"
+ },
+ {
+  "name": "ribs",
+  "category": "food"
+ },
+ {
+  "name": "black holes",
+  "category": "science & nature"
+ },
+ {
+  "name": "stars",
+  "category": "science & nature"
+ },
+ {
+  "name": "galaxies",
+  "category": "science & nature"
+ },
+ {
+  "name": "the big bang",
+  "category": "science & nature"
+ },
+ {
+  "name": "exoplanets",
+  "category": "science & nature"
+ },
+ {
+  "name": "dna",
+  "category": "science & nature"
+ },
+ {
+  "name": "evolution",
+  "category": "science & nature"
+ },
+ {
+  "name": "genetics",
+  "category": "science & nature"
+ },
+ {
+  "name": "ecology",
+  "category": "science & nature"
+ },
+ {
+  "name": "viruses",
+  "category": "science & nature"
+ },
+ {
+  "name": "quantum mechanics",
+  "category": "science & nature"
+ },
+ {
+  "name": "relativity",
+  "category": "science & nature"
+ },
+ {
+  "name": "particle physics",
+  "category": "science & nature"
+ },
+ {
+  "name": "thermodynamics",
+  "category": "science & nature"
+ },
+ {
+  "name": "electromagnetism",
+  "category": "science & nature"
+ },
+ {
+  "name": "earthquakes",
+  "category": "science & nature"
+ },
+ {
+  "name": "plate tectonics",
+  "category": "science & nature"
+ },
+ {
+  "name": "minerals",
+  "category": "science & nature"
+ },
+ {
+  "name": "fossils",
+  "category": "science & nature"
+ },
+ {
+  "name": "volcanoes",
+  "category": "science & nature"
+ },
+ {
+  "name": "climate change",
+  "category": "science & nature"
+ },
+ {
+  "name": "deforestation",
+  "category": "science & nature"
+ },
+ {
+  "name": "pollution",
+  "category": "science & nature"
+ },
+ {
+  "name": "conservation",
+  "category": "science & nature"
+ },
+ {
+  "name": "renewable energy",
+  "category": "science & nature"
+ },
+ {
+  "name": "egypt",
+  "category": "history"
+ },
+ {
+  "name": "greece",
+  "category": "history"
+ },
+ {
+  "name": "rome",
+  "category": "history"
+ },
+ {
+  "name": "mesopotamia",
+  "category": "history"
+ },
+ {
+  "name": "mayans",
+  "category": "history"
+ },
+ {
+  "name": "michelangelo",
+  "category": "history"
+ },
+ {
+  "name": "leonardo da vinci",
+  "category": "history"
+ },
+ {
+  "name": "galileo galilei",
+  "category": "history"
+ },
+ {
+  "name": "william shakespeare",
+  "category": "history"
+ },
+ {
+  "name": "martin luther",
+  "category": "history"
+ }
+]

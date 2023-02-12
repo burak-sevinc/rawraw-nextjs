@@ -9,6 +9,7 @@ import Topic from "./gaming/topic";
 import ResetModal from "./gaming/resetmodal";
 import getTopics from "../lib/gettopics";
 import { GlobalContext } from "../context/globalContext";
+import { useRouter } from "next/router";
 
 export default function GameArea() {
   const {
@@ -32,6 +33,8 @@ export default function GameArea() {
   const [resetModal, setResetModal] = useState(false);
   const [resetButtonDisabled, setResetButtonDisabled] = useState(true);
   const { t } = useTranslation();
+  const {locale} = useRouter();
+  const lang: "tr" | "en" = locale == "tr" ? "tr" : "en"
 
   useEffect(() => {
     if (players.length == 0) {
@@ -51,7 +54,7 @@ export default function GameArea() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [gameTime, paused, players, updateGameTime]);
+  }, [gameTime, paused, players]);
 
   useEffect(() => {
     if (gameTime < 3) {
@@ -91,11 +94,11 @@ export default function GameArea() {
       const playersLength = players.length;
       const currentPlayerId = players[random(playersLength)];
       updateCurrentPlayer(currentPlayerId); //Set current player
-      if (currentTopic !== "") {
+      if (currentTopic.name !== "") {
         //Check current topic for first time
         //Create previous topic object
         const previousTopic = {
-          name: currentTopic,
+          name: currentTopic.name,
           time: gameTime,
         };
         updatePreviousTopics([previousTopic, ...previousTopics]); //Add previous topic to previousTopics state
@@ -109,12 +112,17 @@ export default function GameArea() {
 
       if (topics.length > 0) {
         const topicId = random(topics.length); //Random topic id
-        updateCurrentTopic(topics[topicId].name); //Set current topic
+        updateCurrentTopic({
+          name: topics[topicId].name,
+          category: topics[topicId].category}); //Set current topic
         removeTopic(topicId);
         updateGameTime(0); //Reset game time
         updatePaused(false);
       } else {
-        updateCurrentTopic("");
+        updateCurrentTopic({
+          name: "",
+          category: "",
+        });
         updatePaused(true);
         updateGameTime(0);
         updateNotification({
@@ -135,7 +143,7 @@ export default function GameArea() {
   const handleStopTime = () => {
     if (players.length > 1) {
       updatePaused(!paused);
-      if (currentTopic == "") {
+      if (currentTopic.name == "") {
         handleNextTopic();
       }
     } else {
@@ -153,9 +161,12 @@ export default function GameArea() {
   };
 
   const handleReset = () => {
-    const topicsData = getTopics();
+    const topicsData = getTopics(lang);
     updateTopics(topicsData);
-    updateCurrentTopic("");
+    updateCurrentTopic({
+      name: "",
+      category: ""
+    });
     updatePreviousTopics([]);
     updatePlayers([]);
     updateGameTime(0);
@@ -192,7 +203,8 @@ export default function GameArea() {
           <Topic />
         </div>
         {!resetButtonDisabled ? (
-          <div className="pt-4 flex justify-end">
+          <div className="pt-4 flex justify-end items-center">
+            <p className="text-xs text-fourth">{t("common:resetInfo")}</p>
             <span
               className="bg-third/50 shadow-lg 
           rounded-full text-third p-2 border 

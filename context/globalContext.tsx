@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +8,7 @@ import {
   GetLocalTopics,
 } from "../hooks/getLocalData";
 import { IAvatar, INotification, IPreviousTopic, ITopic } from "../interfaces";
+import { Lang } from "../lib/gettopics";
 
 export type GlobalContextType = {
   players: string[];
@@ -14,8 +16,8 @@ export type GlobalContextType = {
   deletePlayer: (index: number) => void;
   topics: ITopic[];
   updateTopics: (topics: ITopic[]) => void;
-  currentTopic: string;
-  updateCurrentTopic: (topic: string) => void;
+  currentTopic: ITopic;
+  updateCurrentTopic: (topic: ITopic) => void;
   previousTopics: IPreviousTopic[];
   updatePreviousTopics: (previousTopics: IPreviousTopic[]) => void;
   currentPlayer: string;
@@ -38,7 +40,10 @@ const globalContextValues = {
   players: [""],
   currentPlayer: "",
   topics: [],
-  currentTopic: "",
+  currentTopic: {
+    name: "",
+    category:""
+  },
   previousTopics: [],
   avatar: { bgColor: "", textColor: "" },
   paused: true,
@@ -63,12 +68,15 @@ export const useGlobalContext = () => {
 };
 
 const GlobalContextProvider = ({ children }: GlobalContextProps) => {
-  const [players, setPlayers] = useState<string[]>([""]);
+  const [players, setPlayers] = useState<string[]>([]);
   const [gameTime, setGameTime] = useState<number>(0);
   const [previousTopics, setPreviousTopics] = useState<IPreviousTopic[]>([]);
   const [topics, setTopics] = useState<ITopic[]>([]);
   const [paused, setPaused] = useState<boolean>(true);
-  const [currentTopic, setCurrentTopic] = useState<string>("");
+  const [currentTopic, setCurrentTopic] = useState<ITopic>({
+    name: "",
+    category: ""
+  });
   const [currentPlayer, setCurrentPlayer] = useState<string>("");
   const [notification, setNotification] = useState<INotification>({
     visible: false,
@@ -78,6 +86,8 @@ const GlobalContextProvider = ({ children }: GlobalContextProps) => {
     textColor: "",
   });
 
+  const {locale} = useRouter();
+  const lang: "tr" | "en" = locale == "tr" ? "tr" : "en"
   const { t } = useTranslation();
 
   const updatePreviousTopics = (previousTopics: IPreviousTopic[]) => {
@@ -95,6 +105,7 @@ const GlobalContextProvider = ({ children }: GlobalContextProps) => {
 
   const updateGameTime = (gameTime: number) => {
     setGameTime(gameTime);
+    console.log("gametime updated", gameTime)
   };
 
   const deletePlayer = (index: number) => {
@@ -108,7 +119,7 @@ const GlobalContextProvider = ({ children }: GlobalContextProps) => {
     localStorage.setItem("players", JSON.stringify(newPlayers));
   };
 
-  const updateCurrentTopic = (topic: string) => {
+  const updateCurrentTopic = (topic: ITopic) => {
     setCurrentTopic(topic);
   };
   const updateCurrentPlayer = (currentPlayer: string) => {
@@ -125,7 +136,7 @@ const GlobalContextProvider = ({ children }: GlobalContextProps) => {
   useEffect(() => {
     GetLocalPlayers(players, setPlayers);
     GetLocalPreviousTopics(previousTopics, setPreviousTopics);
-    GetLocalTopics(setTopics);
+    GetLocalTopics(setTopics, lang);
   }, []);
 
   return (

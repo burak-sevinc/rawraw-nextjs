@@ -16,7 +16,7 @@ export default function Notification() {
       2000
     );
     return () => clearTimeout(timer);
-  }, [notification, updateNotification]);
+  }, [notification]);
 
   const checkCircleIcon = () => {
     return (

@@ -5,6 +5,7 @@ export interface IPreviousTopic {
 
 export interface ITopic {
   name: string;
+  category: string;
 }
 
 export interface INotification {

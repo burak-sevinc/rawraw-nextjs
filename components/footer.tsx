@@ -10,10 +10,10 @@ export default function Footer() {
         <h2 className="font-bold text-2xl text-third">
           {t("common:aboutTitle")}
         </h2>
-          <div
-            className="text-third text-sm"
-            dangerouslySetInnerHTML={{ __html: t("common:aboutDescription") }}
-          ></div>
+        <div
+          className="text-third text-sm"
+          dangerouslySetInnerHTML={{ __html: t("common:aboutDescription") }}
+        ></div>
       </div>
       <div className="space-y-2 flex justify-center mt-8 cursor-pointer hover:transition hover:ease-in-out delay-100 duration-100 hover:scale-110">
         <Link

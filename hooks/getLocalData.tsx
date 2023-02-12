@@ -1,5 +1,5 @@
 import { IPreviousTopic, ITopic } from "../interfaces";
-import getTopics from "../lib/gettopics";
+import getTopics, { Lang } from "../lib/gettopics";
 
 export function GetLocalPlayers(
   players: string[],
@@ -32,10 +32,11 @@ export function GetLocalPreviousTopics(
 }
 
 export function GetLocalTopics(
-  setTopics: React.Dispatch<React.SetStateAction<ITopic[]>>
+  setTopics: React.Dispatch<React.SetStateAction<ITopic[]>>,
+  lang: "tr" | "en"
 ) {
   const topicsLocal = localStorage.getItem("topics");
-  const topicsData = getTopics();
+  const topicsData = getTopics(lang);
   if (topicsLocal !== null) {
     if (JSON.parse(topicsLocal).length == 0) {
       localStorage.setItem("topics", JSON.stringify(topicsData));
