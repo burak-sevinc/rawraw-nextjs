@@ -1,59 +1,17 @@
 import { useEffect, useState } from "react";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import { useTranslation } from "next-i18next";
+import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import GameArea from "../components/gamearea";
 import PreviousTopics from "../components/gaming/previoustopics";
 import Players from "../components/players";
-import getTopics from "../lib/gettopics";
-import Head from "next/head";
-import { useTheme } from "next-themes";
+import Link from "next/link";
+import Footer from "../components/footer";
 
 function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
   const [isLoading, setIsLoading] = useState(true);
-  const [topics, setTopics]: any = useState([]);
-  const [currentTopic, setCurrentTopic] = useState("");
-  const [players, setPlayers] = useState([]);
-  const [previousTopics, setPreviousTopics] = useState([]);
-  const { t } = useTranslation("common");
-
   useEffect(() => {
-    setIsLoading(false)
-  }, []);
-
-  useEffect(() => {
-    if (localStorage.getItem("players") !== null) {
-      const playersLocal = JSON.parse(localStorage.getItem("players") || "");
-      if (playersLocal.length == 0) {
-        localStorage.setItem("players", JSON.stringify(players));
-      } else {
-        setPlayers(playersLocal);
-      }
-    } else {
-      localStorage.setItem("players", JSON.stringify(players));
-    }
-
-    const previousTopicsLocal = localStorage.getItem("previousTopics");
-    if (previousTopicsLocal !== null) {
-      if (JSON.parse(previousTopicsLocal).length == 0) {
-        localStorage.setItem("previousTopics", JSON.stringify(previousTopics));
-      } else {
-        setPreviousTopics(JSON.parse(previousTopicsLocal));
-      }
-    }
-
-    const topicsLocal = localStorage.getItem("topics");
-    const topicsData = getTopics();
-    if (topicsLocal !== null) {
-      if (JSON.parse(topicsLocal).length == 0) {
-        localStorage.setItem("topics", JSON.stringify(topicsData));
-      } else {
-        setTopics(JSON.parse(topicsLocal));
-      }
-    } else {
-      setTopics(topicsData);
-      localStorage.setItem("topics", JSON.stringify(topicsData));
-    }
+    setIsLoading(false);
   }, []);
 
   if (isLoading) {
@@ -84,31 +42,25 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
 
   return (
     <>
-    <Head>
-    <title>Rawraw Game</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    </Head>
-    <div className="pb-12 md:pb-8 lg:pb-0">
-
-      <div className="lg:grid-rows-2 rounded-xl shadow-2xl shadow-second border border-third bg-fifth grid lg:grid-cols-4 grid-cols-1 md:mx-12 mx-4 lg:mx-44 xl:mx-64 lg:space-x-4 lg:space-y-0 space-y-4 p-4">
-        <div className="lg:col-span-1 lg:row-span-2 col-span-1 space-y-4">
-          <Players players={players} setPlayers={setPlayers} />
+      <Head>
+        <title>Rawraw Game</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
+      <div className="pb-12 md:pb-8 lg:pb-0">
+        <div className="lg:grid-rows-2 rounded-xl shadow-2xl shadow-second border border-third bg-fifth grid lg:grid-cols-4 grid-cols-1 max-w-xs md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto lg:space-x-4 lg:space-y-0 space-y-4 p-4">
+          <div className="lg:col-span-1 lg:row-span-2 col-span-1 space-y-4">
+            <Players />
+          </div>
+          <div className="lg:col-span-3 lg:row-span-2 col-span-1 space-y-4">
+            <GameArea />
+            <PreviousTopics />
+          </div>
         </div>
-        <div className="lg:col-span-3 lg:row-span-2 col-span-1 space-y-4">
-          <GameArea
-            players={players}
-            topics={topics}
-            currentTopic={currentTopic}
-            setCurrentTopic={setCurrentTopic}
-            setPreviousTopics={setPreviousTopics}
-            previousTopics={previousTopics}
-            setTopics={setTopics}
-            setPlayers={setPlayers}
-          />
-          <PreviousTopics previousTopics={previousTopics} />
-        </div>
+        <hr className="my-8 max-w-xs md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto border border-1 border-second" />
+        <section id="about">
+          <Footer />
+        </section>
       </div>
-    </div>
     </>
   );
 }

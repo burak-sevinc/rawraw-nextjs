@@ -1,10 +1,12 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import Image from "next/image";
 import { Menu, Transition } from "@headlessui/react";
 
-export default function ThemeSelector({ setTheme }: any) {
-  const [open, setOpen] = useState(false);
+export type ThemeSelectorProps = {
+  setTheme: (theme: string) => void;
+};
 
+export default function ThemeSelector({ setTheme }: ThemeSelectorProps) {
   return (
     <>
       <Menu as="div" className="relative">
@@ -46,11 +48,12 @@ export default function ThemeSelector({ setTheme }: any) {
                   >
                     <Image
                       alt="Ligt Mode"
-                      src="/ashtry_cigar.svg"
-                      height={50}
-                      width={50}
+                      src="/lighter.svg"
+                      height={30}
+                      width={30}
                       className="transition delay-50 duration-100 group-hover:scale-110"
                     />
+                    <span className="sr-only">Light theme</span>
                     <p>Light</p>
                   </div>
                 </Menu.Item>
@@ -61,11 +64,12 @@ export default function ThemeSelector({ setTheme }: any) {
                   >
                     <Image
                       alt="Dark Mode"
-                      src="/lighter.svg"
+                      src="/ashtry_cigar.svg"
                       height={50}
-                      width={35}
+                      width={50}
                       className="transition delay-50 duration-100 group-hover:scale-110"
                     />
+                    <span className="sr-only">Dark theme</span>
                     <p>Dark</p>
                   </div>
                 </Menu.Item>
@@ -77,10 +81,11 @@ export default function ThemeSelector({ setTheme }: any) {
                     <Image
                       alt="Psychedelic Mode"
                       src="/smiley.svg"
-                      height={50}
+                      height={35}
                       width={35}
                       className="transition delay-50 duration-100 group-hover:scale-110"
                     />
+                    <span className="sr-only">Psychedelic theme</span>
                     <p>Psychedelic</p>
                   </div>
                 </Menu.Item>

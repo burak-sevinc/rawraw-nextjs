@@ -1,5 +1,9 @@
 import { useTranslation } from "next-i18next";
-export default function StopTimeButton({ paused, currentTopic }: any) {
+import { useContext } from "react";
+import { GlobalContext } from "../../context/globalContext";
+
+export default function StopTimeButton() {
+  const { paused, currentTopic } = useContext(GlobalContext);
   const { t } = useTranslation();
   const PlayIcon = () => {
     return (

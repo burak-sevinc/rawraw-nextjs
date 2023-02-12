@@ -1,58 +1,51 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Notification from "./gaming/notification";
 import PlayerModal from "./playermodal";
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { MakeAvatarUrl } from "../hooks/makeAvatarUrl";
+import { GlobalContext } from "../context/globalContext";
 
-export default function Players({ players, setPlayers }: any) {
+export default function Players() {
+  const { players, avatar, updateAvatar, deletePlayer } =
+    useContext(GlobalContext);
   const { t } = useTranslation();
-  const [notification, setNotification] = useState({visible:false ,status: '', message: ''})
   const [open, setOpen] = useState(false);
-  const {theme} = useTheme()
-  const [avatarBgColor, setAvatarBgColor] = useState("")
-  const [avatarTextColor, setAvatarTextColor] = useState("")
+  const { theme } = useTheme();
 
-  useEffect(() => {
-    if(theme == "light"){
-      setAvatarBgColor("354244")
-      setAvatarTextColor("c8d4d7")
-    }else if(theme == "dark"){
-      setAvatarBgColor("FFE77AFF")
-      setAvatarTextColor("1E5128")
-    }else if(theme == "psy"){
-      setAvatarBgColor("3A2170")
-      setAvatarTextColor("DE4959")
+  const AvatarColorChanger = (theme: string | undefined) => {
+    if (theme == "light") {
+      updateAvatar({
+        bgColor: "354244",
+        textColor: "c8d4d7",
+      });
+    } else if (theme == "dark") {
+      updateAvatar({
+        bgColor: "FFE77AFF",
+        textColor: "1E5128",
+      });
+    } else if (theme == "psy") {
+      updateAvatar({
+        bgColor: "3A2170",
+        textColor: "DE4959",
+      });
     }
-  }, [theme])
-  
-  const deletePlayer = (index: any) => {
-    const newPlayers = players.filter((_: any, i: number) => i !== index);
-    setPlayers(newPlayers)
-    setNotification({
-      visible: true,
-      status: "success",
-      message: t('messages:playerRemoved')
-    })
-    localStorage.setItem('players', JSON.stringify(newPlayers))
   };
 
+  useEffect(() => {
+    AvatarColorChanger(theme);
+  }, [theme]);
 
-  const avatarUrl = (name: string, avatarBgColor: string, avatarTextColor: string) => `https://ui-avatars.com/api/?name=${name}&length=2&bold=true&rounded=true&format=svg&background=${avatarBgColor}&color=${avatarTextColor}`
-  
   return (
     <div className="relative">
-      <Notification notification={notification} setNotification={setNotification} />
-      <PlayerModal
-        open={open}
-        setOpen={setOpen}
-        players={players}
-        setPlayers={setPlayers}
-        setNotification={setNotification}
-      />
+      <Notification />
+      <PlayerModal open={open} setOpen={setOpen} />
       <div className="bg-second rounded-md relative h-auto overflow-hidden">
         <div className="absolute top-0 left-0 right-0 px-4 py-3 flex items-center font-semibold text-lg shadow-second shadow-lg bg-opacity-20 bg-second/90 backdrop-blur-lg">
-          <h1 className="text-xl text-third font-bold pb-4">{t('common:players')}</h1>
+          <h1 className="text-xl text-third font-bold pb-4">
+            {t("common:players")}
+          </h1>
           <div
             onClick={() => setOpen(!open)}
             className="cursor-pointer transition delay-50 duration-200 ease-in-out hover:scale-125 ml-auto border border-third group hover:bg-fourth hover:border-0 rounded-full w-8 h-8 flex justify-center items-center"
@@ -81,7 +74,13 @@ export default function Players({ players, setPlayers }: any) {
             >
               <div className="flex dark:text-lemon-green items-center space-x-2">
                 <span>
-                  <Image src={avatarUrl(item, avatarBgColor, avatarTextColor)} width={30} height={30} alt={item} className="rounded-full" />
+                  <Image
+                    src={MakeAvatarUrl(item, avatar.bgColor, avatar.textColor)}
+                    width={30}
+                    height={30}
+                    alt={item}
+                    className="rounded-full"
+                  />
                 </span>
                 <h3 className="ml-1 font-semibold text-third">{item}</h3>
               </div>

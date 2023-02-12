@@ -1,10 +1,10 @@
 
 {
-  "playerAdded": "Player added.",
-  "playerRemoved": "The player has been removed.",
+  "playerAdded": "Player added. 🫶🏼",
+  "playerRemoved": "The player has been removed. 👍",
   "topicsFinished": "You talked about all the topics 👻",
-  "minPlayer": "Minimum of 2 players required to play.",
-  "resetSuccess": "The game has been reset successfully.",
-  "minNextTopicTime": "The game time need be at least 3 seconds before you can move on to the next topic.",
-  "minNicknameLength": "*Player name need be at least 1 character."
+  "minPlayer": "Minimum of 2 players required to play. ✌🏼",
+  "resetSuccess": "The game has been reset successfully. 🗑",
+  "minNextTopicTime": "The game time need be at least 3 seconds before you can move on to the next topic. ⏰",
+  "minNicknameLength": "*Player name need be at least 1 character. 👆🏼"
 }

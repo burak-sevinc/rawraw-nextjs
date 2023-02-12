@@ -1,34 +1,43 @@
 /* This example requires Tailwind CSS v2.0+ */
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import React, {
+  ChangeEvent,
+  Dispatch,
+  Fragment,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useTranslation } from "next-i18next";
 import { Dialog, Transition } from "@headlessui/react";
 import { useTheme } from "next-themes";
-import { Roboto_Mono } from "@next/font/google";
+import { GlobalContext } from "../context/globalContext";
+import GetFont from "../hooks/getFont";
 
-const robotoMono = Roboto_Mono({
-  subsets: ['latin']
-})
-export default function PlayerModal({
-  open,
-  setOpen,
-  players,
-  setPlayers,
-  setNotification,
-}: any) {
-  const { t }: any = useTranslation();
+export type PlayerModalProps = {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+export default function PlayerModal({ open, setOpen }: PlayerModalProps) {
+  const { t } = useTranslation();
+  const { players, updatePlayers, updateNotification } =
+    useContext(GlobalContext);
+  const robotoMono = GetFont();
   const nicknameRef = useRef<HTMLInputElement>(null);
   const [nickname, setNickname] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [minError, setMinError] = useState(false);
   const { theme } = useTheme();
-  const [currentTheme, setCurrentTheme] = useState(theme)
+  const [currentTheme, setCurrentTheme] = useState(theme);
 
   useEffect(() => {
-    !open ? setMinError(false) : ""
-    setCurrentTheme(theme)
+    !open ? setMinError(false) : "";
+    setCurrentTheme(theme);
   }, [open, theme]);
 
-  const handleMinLength = (e: any) => {
+  const handleMinLength = (e: ChangeEvent<HTMLInputElement>) => {
     if (nicknameRef.current?.value == "") {
       setMinError(true);
       return nicknameRef.current.focus();
@@ -45,7 +54,7 @@ export default function PlayerModal({
     } else {
       setMinError(false);
     }
-    await setPlayers([nickname, ...players]);
+    await updatePlayers([nickname, ...players]);
     const playersLocal = localStorage.getItem("players");
     if (playersLocal !== null) {
       const playersParse = JSON.parse(playersLocal);
@@ -54,12 +63,14 @@ export default function PlayerModal({
     }
     setNickname("");
     setOpen(false);
-    setNotification({
+    updateNotification({
       visible: true,
       status: "success",
       message: t("messages:playerAdded"),
     });
   };
+
+  const inputPlaceholder: string = t("common:nickname");
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -128,10 +139,10 @@ export default function PlayerModal({
                         e.key === "Enter" ? handleAddPlayer() : ""
                       }
                       ref={nicknameRef}
-                      placeholder={t("common:nickname")}
+                      placeholder={inputPlaceholder}
                       className={`w-full h-12 bg-second
                       rounded-md p-4 border border-third 
-                      text-third
+                      text-third outline-none focus:ring-2 focus:ring-fourth
                       placeholder:text-third
                       ${
                         minError

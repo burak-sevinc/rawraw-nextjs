@@ -44,6 +44,13 @@ module.exports = {
       fourth: "var(--color-fourth)",
       ...colors,
     },
+    ringColor:{
+      first: "var(--color-first)",
+      second: "var(--color-second)",
+      third: "var(--color-third)",
+      fourth: "var(--color-fourth)",
+      ...colors,
+    },
     extend: {
       colors:{
         "thumb-color": "var(--color-third)",

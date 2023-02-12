@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+
 export default function NextTopicButton() {
   const { t } = useTranslation();
   return (

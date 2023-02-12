@@ -1,30 +1,37 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useContext, useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Dialog, Transition } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { Roboto_Mono } from "@next/font/google";
+import { GlobalContext } from "../../context/globalContext";
 
 const robotoMono = Roboto_Mono({
-  subsets: ['latin']
-})
+  subsets: ["latin", "latin-ext"],
+});
+
+export interface Props {
+  resetModal: boolean;
+  setResetModal: (resetModal: boolean) => void;
+  handleReset: void;
+}
 
 export default function ResetModal({
   resetModal,
   setResetModal,
-  setNotification,
   handleReset,
 }: any) {
+  const { updateNotification } = useContext(GlobalContext);
   const { t } = useTranslation();
   const cancelButtonRef = useRef(null);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const { theme } = useTheme();
-  const [currentTheme, setCurrentTheme] = useState(theme)
+  const [currentTheme, setCurrentTheme] = useState(theme);
   const handleResetButton = async () => {
     handleReset();
     setIsButtonDisabled(true);
     setResetModal(false);
-    setNotification({
+    updateNotification({
       visible: true,
       status: "success",
       message: t("messages:resetSuccess"),
