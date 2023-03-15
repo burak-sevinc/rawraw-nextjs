@@ -25,7 +25,7 @@ React.js, Next.js, TypeScript, TailwindCSS
 Clone the project
 
 ```bash
-  git clone https://github.com/iamBuraks/rawraw-nextjs
+  git clone https://github.com/burak-sevinc/rawraw-nextjs
 ```
 
 Go to the project directory
